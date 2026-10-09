@@ -1,0 +1,13 @@
+{
+  "schema_version": "stateaxis-mod-provenance/v1",
+  "source_repository": "Qixin-Gaoke/stateaxis",
+  "source_commit": "7562b5fa6f42e2e045a877b53ac934739e2cf230",
+  "source_issues": [
+    57
+  ],
+  "source_evidence": "docs/history/reports/ISSUE57_PREEMPTION_RECOMPUTE_CLOSURE_20260815.md",
+  "copied_evidence": "evidence/ISSUE57_PREEMPTION_RECOMPUTE_CLOSURE_20260815.md",
+  "copied_evidence_sha256": "1ce3ac0cd1c59e287841aa031c71d013e2867c1d271d81283f8041aefece51d3",
+  "qualification_inherited": false,
+  "implementation_extracted": false
+}
