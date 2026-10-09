@@ -9,5 +9,9 @@
   "copied_evidence": "evidence/ISSUE57_PREEMPTION_RECOMPUTE_CLOSURE_20260815.md",
   "copied_evidence_sha256": "1ce3ac0cd1c59e287841aa031c71d013e2867c1d271d81283f8041aefece51d3",
   "qualification_inherited": false,
-  "implementation_extracted": false
+  "implementation_extracted": false,
+  "licensing": {
+    "scaffolding": "Apache-2.0",
+    "copied_evidence": "No additional license grant is inferred from this split."
+  }
 }
