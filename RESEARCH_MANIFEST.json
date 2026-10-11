@@ -1,0 +1,45 @@
+{
+  "schema_version": "stateaxis-research-mod/v1",
+  "mod_id": "org.vllm-hust.stateaxis-preemption-recompute",
+  "version": "0.2.0",
+  "mechanism": {
+    "name": "generation-safe-preemption-recompute",
+    "max_preemptions_per_request": 1,
+    "state_slot_pressure_only": true,
+    "cold_origin_only": true,
+    "complete_token_checkpoint": true,
+    "generation_invalidation_required": true,
+    "exact_recompute_token_required": true,
+    "suspend_until_state_demand_drains": true,
+    "fail_closed": true
+  },
+  "host_contract": {
+    "provider": "stateaxis",
+    "api_range": ">=1,<2",
+    "implementation": "statecentric_engine:parse_preemption_recompute_additional_config",
+    "effect_counters": [
+      "preemption_pressure_opportunities",
+      "preemption_applied",
+      "preemption_fallbacks",
+      "preemption_resumes",
+      "preemption_invalidated_generations",
+      "recomputed_tokens"
+    ]
+  },
+  "qualification": {
+    "performance_qualified": false,
+    "evidence_label": "matched-real-npu-negative",
+    "scope": "Qwen2.5-14B BF16, 16 retained seeds, one long request and four pressure requests, scheduler B1",
+    "result": "All six arms were exact and pressure TTFT improved, but long-request sojourn regressed 113.375%, violating the 5% no-harm guard.",
+    "blockers": [
+      "protected long-request sojourn exceeded the preregistered regression limit",
+      "the tested policy shifts latency from pressure requests to the preempted request",
+      "no broader workload qualification exists"
+    ]
+  },
+  "source": {
+    "repository": "Qixin-Gaoke/stateaxis",
+    "commit": "7562b5fa6f42e2e045a877b53ac934739e2cf230",
+    "issue": 57
+  }
+}
