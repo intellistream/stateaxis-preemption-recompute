@@ -18,26 +18,28 @@
   "lifecycle": {
     "status": "experimental",
     "default_enabled": false,
-    "activation_contract": "Import-only research descriptor; activation is refused until the StateAxis host contract and independent implementation are reviewed.",
-    "rollback_contract": "Disable or forget the descriptor and run the unchanged StateAxis host without this MOD."
+    "activation_contract": "Extension Manager verifies RESEARCH_MANIFEST.json, forwards the hash-bound experimental one-preemption policy, and StateAxis admits only the matching lifecycle contract.",
+    "rollback_contract": "Disable the extension; StateAxis then keeps preemption/recompute off and preserves ordinary resident-generation scheduling."
   },
   "scope": {
     "mechanism": "generation_safe_preemption_recompute",
-    "supported_workloads": [],
+    "supported_workloads": [
+      "experimental cold-origin decode under hard state-slot pressure"
+    ],
     "out_of_scope": [
       "general performance claims",
       "automatic inheritance from StateAxis aggregate evidence"
     ]
   },
   "evidence": {
-    "qualification": "not-beneficial-in-tested-cell",
-    "latest_result": "evidence/ISSUE57_PREEMPTION_RECOMPUTE_CLOSURE_20260815.md",
+    "qualification": "matched-real-npu-negative",
+    "latest_result": "evidence/ecpa-contract-20261010/RESULT.json",
     "index": "EVIDENCE.md",
     "performance_claims": [
       {
-        "label": "not-beneficial-in-tested-cell",
-        "scope": "frozen StateAxis source evidence only",
-        "result": "Pressure TTFT improved, but long-sojourn latency regressed 113.375%, violating the no-harm guard."
+        "label": "matched-real-npu-negative",
+        "scope": "Qwen2.5-14B BF16 issue #57 frozen 3+3 matched real-NPU cell",
+        "result": "All arms were exact and pressure TTFT improved, but long-sojourn latency regressed 113.375%, violating the 5% no-harm guard."
       }
     ]
   }

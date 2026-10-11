@@ -9,7 +9,14 @@
   "copied_evidence": "evidence/ISSUE57_PREEMPTION_RECOMPUTE_CLOSURE_20260815.md",
   "copied_evidence_sha256": "1ce3ac0cd1c59e287841aa031c71d013e2867c1d271d81283f8041aefece51d3",
   "qualification_inherited": false,
-  "implementation_extracted": false,
+  "implementation_extracted": true,
+  "implementation_boundary": {
+    "carrier": "stateaxis_host_builtin",
+    "research_manifest": "RESEARCH_MANIFEST.json",
+    "research_manifest_sha256": "2134133e288b0b7081dd62f017c0fc924b821c484e200ae0256edb99eb59b5d2",
+    "host_symbol": "statecentric_engine:parse_preemption_recompute_additional_config",
+    "performance_qualified": false
+  },
   "licensing": {
     "scaffolding": "Apache-2.0",
     "copied_evidence": "No additional license grant is inferred from this split."

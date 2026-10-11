@@ -1,0 +1,61 @@
+{
+  "schema_version": "stateaxis-mod-on-off/v1",
+  "date_utc": "2026-10-10",
+  "mod_id": "org.vllm-hust.stateaxis-preemption-recompute",
+  "mod_version": "0.2.0",
+  "research_manifest_sha256": "2134133e288b0b7081dd62f017c0fc924b821c484e200ae0256edb99eb59b5d2",
+  "evidence_label": "manager-contract-mock-worker-non-performance",
+  "performance_qualified": false,
+  "hardware_execution": false,
+  "model": null,
+  "workload": "deterministic StateAxis native-protocol mock worker",
+  "correctness_reference": {
+    "off_state_capacity": 2,
+    "on_state_capacity": 1,
+    "reason": "OFF needs two slots to finish both retained requests; ON uses one slot to exercise hard-pressure preemption",
+    "performance_comparable": false,
+    "exact_long_output": [41, 42, 43, 44],
+    "exact_pressure_output": [81]
+  },
+  "on_effects": {
+    "mod_identity_present": true,
+    "preemption_pressure_opportunities": 1,
+    "preemption_applied": 1,
+    "preemption_fallbacks": 0,
+    "preemption_resumes": 1,
+    "invalidated_generations": 1,
+    "recomputed_tokens": 5,
+    "post_resume_state_live": true
+  },
+  "manager": {
+    "check": "passed",
+    "plan": "passed",
+    "dry_run": "passed",
+    "managed_assembly_check_process": "passed",
+    "assembly_identity_sha256": "a5c78bf9390e19be568b23e8e276874809d834b9148cf36902a572ecc5bc6da1"
+  },
+  "validation": {
+    "python_tests": "3 passed",
+    "rust_targeted_preemption_tests": "3 passed",
+    "rust_targeted_assembly_tests": "3 passed",
+    "rust_library_tests": "406 passed",
+    "cargo_check_lib_bins": "passed",
+    "native_state_engine_build": "passed"
+  },
+  "historical_real_npu_result": {
+    "evidence_label": "matched-real-npu-negative",
+    "model": "Qwen2.5-14B BF16",
+    "fresh_service_arms": 6,
+    "token_and_lifecycle_exact": true,
+    "pressure_ttft_p50_delta_percent": -55.780,
+    "pressure_ttft_p95_delta_percent": -45.267,
+    "long_sojourn_delta_percent": 113.375,
+    "disposition": "rejected by 5% no-harm guard"
+  },
+  "limitations": [
+    "current activation-contract check uses a CPU mock worker",
+    "current OFF and ON fixture capacities differ and are not a performance comparison",
+    "no accelerator, model-weight, latency, throughput, or HBM claim is made",
+    "historical negative result is workload-scoped rather than universal"
+  ]
+}
