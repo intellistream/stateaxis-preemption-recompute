@@ -33,7 +33,7 @@
   },
   "evidence": {
     "qualification": "matched-real-npu-negative",
-    "latest_result": "evidence/ecpa-contract-20261010/RESULT.json",
+    "latest_result": "evidence/issue57-preemption-20260815-r2-3plus3/result.json",
     "index": "EVIDENCE.md",
     "performance_claims": [
       {

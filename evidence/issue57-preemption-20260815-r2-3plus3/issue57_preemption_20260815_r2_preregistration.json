@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "format": "statecentric-issue57-preemption-preregistration-v2",
+  "issue": 57,
+  "version": "issue57-preemption-20260815-r2",
+  "hypothesis": "At hard state-slot pressure, one bounded batch-boundary token-checkpoint preemption reduces pressure-request TTFT without changing tokens or lifecycle and without more than 5% long-request or aggregate wall regression.",
+  "arms": {
+    "control": {
+      "preemption_recompute": false,
+      "max_per_request": 1
+    },
+    "candidate": {
+      "preemption_recompute": true,
+      "max_per_request": 1
+    }
+  },
+  "matched_contract": {
+    "fresh_process_per_arm": true,
+    "same_binary_config_model_prompt_oracle": true,
+    "state_capacity": 17,
+    "physical_cache_blocks": 320,
+    "max_batch_size": 1,
+    "max_decode_batch": 4,
+    "seed_retained_states": 16,
+    "long_requests": 1,
+    "long_output_tokens": 32,
+    "pressure_requests": 4,
+    "pressure_output_tokens": 1,
+    "pressure_states_retained": false,
+    "prompt_tokens": 2177,
+    "timing_boundary": "after_seed_states_until_long_and_all_pressure_requests_complete",
+    "one_plus_one_order": ["control", "candidate"],
+    "three_plus_three_order": [
+      ["control", "candidate"],
+      ["candidate", "control"],
+      ["control", "candidate"]
+    ]
+  },
+  "capacity_correction": {
+    "blocks_per_frozen_prompt_state": 18,
+    "minimum_for_17_simultaneous_states": 306,
+    "provisioned_blocks": 320,
+    "safety_blocks": 14,
+    "superseded_run": "issue57-preemption-20260815-r1-1plus1",
+    "superseded_run_observation": "submitted=15, completed=14, backend_inflight=0 because 14 retained states consumed 252 of 256 blocks",
+    "superseded_run_performance_claim": false
+  },
+  "digest_cache": {
+    "canonical_mount_prefix": "/model-assets/repo",
+    "source": "benchmarks/issue95_bounded_apc_20260815_r3_pack_digest_cache.tsv",
+    "sha256": "3cfa499de77b60f739645074f4d6650cedfea80093416a6413f93ec2e9b8725a",
+    "full_byte_verified": true,
+    "independent_outputs_byte_identical": true,
+    "stat_change_policy": "fail-closed full-byte rehash"
+  },
+  "correctness_gates": {
+    "all_outputs_exact": true,
+    "lifecycle_exact": true,
+    "final_active_state_delta": 16,
+    "control_preemption_counters": 0,
+    "candidate_preemption_applied": 1,
+    "candidate_preemption_resumes": 1,
+    "candidate_preemption_fallbacks": 0,
+    "candidate_invalidated_generations": 1,
+    "candidate_recomputed_tokens_min": 2177,
+    "foreign_resources_modified": false
+  },
+  "decision_rule": {
+    "positive": "All correctness gates pass in 1+1 and 3+3; median pressure TTFT p50 improves at least 20%; median long sojourn and matched wall interval each regress no more than 5%.",
+    "negative": "Any correctness/lifecycle gate fails, or repeated candidate pressure TTFT does not improve by 20%, or either protected regression exceeds 5%.",
+    "inconclusive": "1+1 passes but a complete matched 3+3 cannot be obtained under one frozen identity.",
+    "speedup_claim_requires_positive_rule": true
+  },
+  "measurements": [
+    "pressure_ttft_ns_p50_p95_max",
+    "pressure_sojourn_ns_p50_p95_max",
+    "long_ttft_tpot_sojourn_ns",
+    "wall_interval_ns",
+    "request_per_s",
+    "hbm_peak_used_mib",
+    "preemption_applied_resumes_fallbacks_invalidated_generations",
+    "recomputed_tokens",
+    "run_dispersion"
+  ],
+  "prohibitions": [
+    "no pull",
+    "no business-container mutation",
+    "no selective run deletion",
+    "no mixed identity",
+    "no speedup claim from 1+1",
+    "no vLLM comparison from this experiment"
+  ]
+}

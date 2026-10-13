@@ -1,0 +1,5312 @@
+{
+  "arm": "control",
+  "exact": true,
+  "executor_after": {
+    "active_states": 16,
+    "cumulative_allocation_bytes": 481852602144,
+    "cumulative_cow_copies": 0,
+    "hbm_free_bytes": 10957852672,
+    "hbm_total_bytes": 65452113920,
+    "live_allocation_bytes": 53790122528,
+    "max_blocks_per_state": 32,
+    "peak_live_allocation_bytes": 53790122528,
+    "physical_block_tokens": 128,
+    "physical_blocks_free": 32,
+    "physical_blocks_shared": 0,
+    "physical_blocks_total": 320,
+    "physical_blocks_used": 288,
+    "state_capacity": 17,
+    "workspace_capacity_bytes": 5905580032,
+    "workspace_peak_bytes": 5147681280
+  },
+  "executor_before": {
+    "active_states": 0,
+    "cumulative_allocation_bytes": 68319061280,
+    "cumulative_cow_copies": 0,
+    "hbm_free_bytes": 10975264768,
+    "hbm_total_bytes": 65452113920,
+    "live_allocation_bytes": 53790122528,
+    "max_blocks_per_state": 32,
+    "peak_live_allocation_bytes": 53790122528,
+    "physical_block_tokens": 128,
+    "physical_blocks_free": 320,
+    "physical_blocks_shared": 0,
+    "physical_blocks_total": 320,
+    "physical_blocks_used": 0,
+    "state_capacity": 17,
+    "workspace_capacity_bytes": 5905580032,
+    "workspace_peak_bytes": 5147681280
+  },
+  "format": "statecentric-issue57-preemption-recompute-result-v1",
+  "hbm_peak_used_mib": 55085,
+  "hbm_samples": [
+    {
+      "capacity_mib": 65536,
+      "timestamp_ns": 2009507008648363,
+      "used_mib": 55085
+    },
+    {
+      "capacity_mib": 65536,
+      "timestamp_ns": 2009508098999681,
+      "used_mib": 55085
+    },
+    {
+      "capacity_mib": 65536,
+      "timestamp_ns": 2009509215148605,
+      "used_mib": 55085
+    }
+  ],
+  "issue": 57,
+  "lifecycle_exact": true,
+  "long_output_tokens": 32,
+  "long_sojourn_ns": 1202195931,
+  "long_tpot_ns": 29344041,
+  "long_ttft_ns": 292530639,
+  "metrics_after": {
+    "admission_stats_cache_hits": 0,
+    "admission_stats_refreshes": 70,
+    "arrivals_while_executor_inflight": 4,
+    "automatic_prefix_cache_enabled": false,
+    "automatic_prefix_cache_entries": 0,
+    "automatic_prefix_cache_evictions": 0,
+    "automatic_prefix_cache_hash_collisions": 0,
+    "automatic_prefix_cache_hits": 0,
+    "automatic_prefix_cache_inserts": 0,
+    "automatic_prefix_cache_lease_blocked_inserts": 0,
+    "automatic_prefix_cache_lookups": 0,
+    "automatic_prefix_cache_max_entries": 4,
+    "automatic_prefix_cache_reused_tokens": 0,
+    "automatic_prefix_cache_stale_entries": 0,
+    "backend_inflight_requests": 0,
+    "backend_max_inflight_observed": 2,
+    "batches_with_inflight_arrivals": 4,
+    "cancelled_requests": 0,
+    "completed_requests": 21,
+    "decode_batches": 31,
+    "dropped_batch_timings": 0,
+    "dual_microbatch_enabled": false,
+    "dynamic_batching_early_releases": 0,
+    "dynamic_batching_enabled": false,
+    "dynamic_batching_window_expirations": 0,
+    "executed_batches": 52,
+    "forward_authority_enabled": false,
+    "forward_shadow_authority_applied": 0,
+    "forward_shadow_authority_fallbacks": 0,
+    "forward_shadow_enabled": false,
+    "forward_shadow_executor_error": 0,
+    "forward_shadow_mismatch": 0,
+    "forward_shadow_prepare_ns": 0,
+    "forward_shadow_prepared": 0,
+    "forward_shadow_rollback": 0,
+    "forward_shadow_stale": 0,
+    "forward_shadow_validate_ns": 0,
+    "forward_shadow_validated": 0,
+    "host_tier_authority_applied": 0,
+    "host_tier_authority_enabled": false,
+    "host_tier_authority_fallbacks": 0,
+    "host_tier_authority_requests": 0,
+    "host_tier_current_bytes": 0,
+    "host_tier_current_states": 0,
+    "host_tier_deferred_applied": 0,
+    "host_tier_deferred_fallbacks": 0,
+    "host_tier_deferred_pending": 0,
+    "host_tier_deferred_queue_wait_max_ns": 0,
+    "host_tier_deferred_queue_wait_ns": 0,
+    "host_tier_deferred_requests": 0,
+    "host_tier_dropped_operations": 0,
+    "host_tier_prefetch_actor_inflight_ns": 0,
+    "host_tier_prefetch_applied": 0,
+    "host_tier_prefetch_coalesced": 0,
+    "host_tier_prefetch_enabled": false,
+    "host_tier_prefetch_fallbacks": 0,
+    "host_tier_prefetch_pending": 0,
+    "host_tier_prefetch_queue_wait_max_ns": 0,
+    "host_tier_prefetch_queue_wait_ns": 0,
+    "host_tier_prefetch_requests": 0,
+    "host_tier_response_first_enabled": false,
+    "host_tier_restore_hits": 0,
+    "issue19_authority_enabled": false,
+    "issue19_decisions": [],
+    "issue19_telemetry_enabled": false,
+    "max_batch_size_observed": 1,
+    "preemption_applied": 0,
+    "preemption_fallbacks": 0,
+    "preemption_invalidated_generations": 0,
+    "preemption_pressure_opportunities": 0,
+    "preemption_recompute_enabled": false,
+    "preemption_recompute_max_per_request": 1,
+    "preemption_resumes": 0,
+    "prefill_batches": 21,
+    "prefill_chunk_batches": 0,
+    "prefill_chunk_contention_activations": 0,
+    "prefill_chunk_contention_bypasses": 0,
+    "prefill_chunk_items": 0,
+    "program_authority_applied": 0,
+    "program_authority_enabled": false,
+    "program_authority_fallbacks": 0,
+    "program_scheduling_enabled": false,
+    "recent_batch_plans": [
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 320,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57000"
+        ],
+        "state_slot_budget": 17,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 27,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": false,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 27,
+            "reasons": [
+              "queue_order"
+            ],
+            "request_id": "57000",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 302,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57001"
+        ],
+        "state_slot_budget": 16,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 26,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": false,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 26,
+            "reasons": [
+              "queue_order"
+            ],
+            "request_id": "57001",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 284,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57002"
+        ],
+        "state_slot_budget": 15,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 26,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": false,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 26,
+            "reasons": [
+              "queue_order"
+            ],
+            "request_id": "57002",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 266,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57003"
+        ],
+        "state_slot_budget": 14,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 27,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": false,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 27,
+            "reasons": [
+              "queue_order"
+            ],
+            "request_id": "57003",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 248,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57004"
+        ],
+        "state_slot_budget": 13,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 26,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": false,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 26,
+            "reasons": [
+              "queue_order"
+            ],
+            "request_id": "57004",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 230,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57005"
+        ],
+        "state_slot_budget": 12,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 26,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": false,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 26,
+            "reasons": [
+              "queue_order"
+            ],
+            "request_id": "57005",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 212,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57006"
+        ],
+        "state_slot_budget": 11,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 26,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": false,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 26,
+            "reasons": [
+              "queue_order"
+            ],
+            "request_id": "57006",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 194,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57007"
+        ],
+        "state_slot_budget": 10,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 27,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": false,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 27,
+            "reasons": [
+              "queue_order"
+            ],
+            "request_id": "57007",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 176,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57008"
+        ],
+        "state_slot_budget": 9,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 25,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": false,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 25,
+            "reasons": [
+              "queue_order"
+            ],
+            "request_id": "57008",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 158,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57009"
+        ],
+        "state_slot_budget": 8,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 26,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": false,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 26,
+            "reasons": [
+              "queue_order"
+            ],
+            "request_id": "57009",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 140,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57010"
+        ],
+        "state_slot_budget": 7,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 26,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": false,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 26,
+            "reasons": [
+              "queue_order"
+            ],
+            "request_id": "57010",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 122,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57011"
+        ],
+        "state_slot_budget": 6,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 27,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": false,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 27,
+            "reasons": [
+              "queue_order"
+            ],
+            "request_id": "57011",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 104,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57012"
+        ],
+        "state_slot_budget": 5,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 26,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": false,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 26,
+            "reasons": [
+              "queue_order"
+            ],
+            "request_id": "57012",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 86,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57013"
+        ],
+        "state_slot_budget": 4,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 26,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": false,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 26,
+            "reasons": [
+              "queue_order"
+            ],
+            "request_id": "57013",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 68,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57014"
+        ],
+        "state_slot_budget": 3,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 26,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": false,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 26,
+            "reasons": [
+              "queue_order"
+            ],
+            "request_id": "57014",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 50,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57015"
+        ],
+        "state_slot_budget": 2,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 26,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": false,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 26,
+            "reasons": [
+              "queue_order"
+            ],
+            "request_id": "57015",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 32,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 1,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 26,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": false,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 26,
+            "reasons": [
+              "queue_order"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 292,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2177,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 322,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2178,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 352,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2179,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 381,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2180,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 410,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2181,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 440,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2182,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 469,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2183,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 498,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2184,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 528,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2185,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 557,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2186,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 586,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2187,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 615,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2188,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 645,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2189,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 674,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2190,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 703,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2191,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 732,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2192,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 762,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2193,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 791,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2194,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 821,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 1,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2195,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 850,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2196,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 879,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2197,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 909,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 1,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2198,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 938,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2199,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 967,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2200,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 996,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2201,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 1026,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2202,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 1055,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2203,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 1084,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2204,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 1114,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2205,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 1143,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2206,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "decode_ready",
+        "physical_block_budget": 14,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "57900"
+        ],
+        "state_slot_budget": 0,
+        "total_compute_tokens": 1,
+        "total_new_kv_blocks": 0,
+        "total_new_kv_bytes": 196608,
+        "total_new_state_slots": 0,
+        "trace": [
+          {
+            "age_ms": 1172,
+            "compute_tokens": 1,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 0,
+            "estimated_new_kv_bytes": 196608,
+            "estimated_new_state_slots": 0,
+            "forced_by_fairness": false,
+            "hit_kind": "exact",
+            "phase": "decode_ready",
+            "ready_age_ms": 0,
+            "reasons": [
+              "decode_progress",
+              "exact_state",
+              "resident_state"
+            ],
+            "request_id": "57900",
+            "reused_tokens": 2207,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 32,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "58000"
+        ],
+        "state_slot_budget": 1,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 904,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": true,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 904,
+            "reasons": [
+              "starvation_guard"
+            ],
+            "request_id": "58000",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 32,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "58001"
+        ],
+        "state_slot_budget": 1,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 1170,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": true,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 1170,
+            "reasons": [
+              "starvation_guard"
+            ],
+            "request_id": "58001",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 32,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "58002"
+        ],
+        "state_slot_budget": 1,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 1437,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": true,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 1437,
+            "reasons": [
+              "starvation_guard"
+            ],
+            "request_id": "58002",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      },
+      {
+        "oversized_single_request": false,
+        "phase": "prefill_ready",
+        "physical_block_budget": 32,
+        "policy": "full_state_aware",
+        "request_ids": [
+          "58003"
+        ],
+        "state_slot_budget": 1,
+        "total_compute_tokens": 2177,
+        "total_new_kv_blocks": 18,
+        "total_new_kv_bytes": 428015616,
+        "total_new_state_slots": 1,
+        "trace": [
+          {
+            "age_ms": 1704,
+            "compute_tokens": 2177,
+            "deadline_slack_ms": null,
+            "estimated_new_kv_blocks": 18,
+            "estimated_new_kv_bytes": 428015616,
+            "estimated_new_state_slots": 1,
+            "forced_by_fairness": true,
+            "hit_kind": "cold",
+            "phase": "prefill_ready",
+            "ready_age_ms": 1704,
+            "reasons": [
+              "starvation_guard"
+            ],
+            "request_id": "58003",
+            "reused_tokens": 0,
+            "workflow_decode_cohort": null
+          }
+        ],
+        "workflow_cohort": null
+      }
+    ],
+    "recent_batch_timing_capacity": 512,
+    "recent_batch_timings": [
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 17,
+        "batch_enqueued_ns": 2009502254859220,
+        "batch_id": 1,
+        "cohort_resolution_ns": 370,
+        "completion_stage_ns": 22450,
+        "cpp_executor_finished_monotonic_ns": 2009502600604876,
+        "executor_finished_ns": 2009502600822721,
+        "executor_started_ns": 2009502254871260,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 16,
+        "request_commit_ns": 66382,
+        "request_commit_residual_ns": 7540,
+        "request_ids": [
+          "57000"
+        ],
+        "rust_completion_received_monotonic_ns": 2009502600822691,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009502600902222,
+        "state_graph_publication_ns": 52681,
+        "state_graph_publication_started_monotonic_ns": 2009502600849541,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 430,
+          "graph_publish": {
+            "batch_validation_ns": 1290,
+            "dependency_resolution_ns": 880,
+            "graph_transaction": {
+              "commit_ns": 5920,
+              "object_validation_ns": 2370,
+              "residual_ns": 0,
+              "structural_validation_ns": 2330,
+              "total_ns": 10620
+            },
+            "graph_transaction_ns": 12280,
+            "object_identity_ns": 7760,
+            "payload_hash_ns": 17421,
+            "projection_commit_ns": 1240,
+            "residual_ns": 2890,
+            "total_ns": 43761
+          },
+          "graph_publish_call_ns": 47081,
+          "identity_assignment_ns": 220,
+          "resident_map_commit_ns": 2970,
+          "residual_ns": 1920,
+          "state_reference_prepare_ns": 60,
+          "total_ns": 52681
+        },
+        "state_release_completed_ns": 2009502600914833,
+        "state_release_residual_ns": 530,
+        "terminal_publication_prepare_ns": 6161,
+        "timing_record_ns": 350,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 0,
+        "tracked_active_states_after_completion": 1,
+        "worker_metrics_ns": 2380
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 16,
+        "batch_enqueued_ns": 2009502628432014,
+        "batch_id": 2,
+        "cohort_resolution_ns": 140,
+        "completion_stage_ns": 10711,
+        "cpp_executor_finished_monotonic_ns": 2009502894559196,
+        "executor_finished_ns": 2009502894693708,
+        "executor_started_ns": 2009502628437214,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 15,
+        "request_commit_ns": 39480,
+        "request_commit_residual_ns": 3270,
+        "request_ids": [
+          "57001"
+        ],
+        "rust_completion_received_monotonic_ns": 2009502894693678,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009502894739349,
+        "state_graph_publication_ns": 32640,
+        "state_graph_publication_started_monotonic_ns": 2009502894706709,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 200,
+          "graph_publish": {
+            "batch_validation_ns": 700,
+            "dependency_resolution_ns": 720,
+            "graph_transaction": {
+              "commit_ns": 2060,
+              "object_validation_ns": 1450,
+              "residual_ns": 0,
+              "structural_validation_ns": 1860,
+              "total_ns": 5370
+            },
+            "graph_transaction_ns": 6190,
+            "object_identity_ns": 5020,
+            "payload_hash_ns": 13700,
+            "projection_commit_ns": 270,
+            "residual_ns": 1700,
+            "total_ns": 28300
+          },
+          "graph_publish_call_ns": 30240,
+          "identity_assignment_ns": 180,
+          "resident_map_commit_ns": 720,
+          "residual_ns": 1260,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 32640
+        },
+        "state_release_completed_ns": 2009502894745549,
+        "state_release_residual_ns": 190,
+        "terminal_publication_prepare_ns": 3570,
+        "timing_record_ns": 240,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 1,
+        "tracked_active_states_after_completion": 2,
+        "worker_metrics_ns": 1320
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 15,
+        "batch_enqueued_ns": 2009502922193810,
+        "batch_id": 3,
+        "cohort_resolution_ns": 150,
+        "completion_stage_ns": 7040,
+        "cpp_executor_finished_monotonic_ns": 2009503188365992,
+        "executor_finished_ns": 2009503188526035,
+        "executor_started_ns": 2009502922198510,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 14,
+        "request_commit_ns": 24531,
+        "request_commit_residual_ns": 2230,
+        "request_ids": [
+          "57002"
+        ],
+        "rust_completion_received_monotonic_ns": 2009503188525975,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009503188554126,
+        "state_graph_publication_ns": 19631,
+        "state_graph_publication_started_monotonic_ns": 2009503188534495,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 140,
+          "graph_publish": {
+            "batch_validation_ns": 610,
+            "dependency_resolution_ns": 580,
+            "graph_transaction": {
+              "commit_ns": 1950,
+              "object_validation_ns": 850,
+              "residual_ns": 0,
+              "structural_validation_ns": 820,
+              "total_ns": 3620
+            },
+            "graph_transaction_ns": 4230,
+            "object_identity_ns": 4461,
+            "payload_hash_ns": 5030,
+            "projection_commit_ns": 310,
+            "residual_ns": 1370,
+            "total_ns": 16591
+          },
+          "graph_publish_call_ns": 17831,
+          "identity_assignment_ns": 170,
+          "resident_map_commit_ns": 750,
+          "residual_ns": 650,
+          "state_reference_prepare_ns": 90,
+          "total_ns": 19631
+        },
+        "state_release_completed_ns": 2009503188558776,
+        "state_release_residual_ns": 190,
+        "terminal_publication_prepare_ns": 2670,
+        "timing_record_ns": 210,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 2,
+        "tracked_active_states_after_completion": 3,
+        "worker_metrics_ns": 830
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 14,
+        "batch_enqueued_ns": 2009503215892484,
+        "batch_id": 4,
+        "cohort_resolution_ns": 140,
+        "completion_stage_ns": 7521,
+        "cpp_executor_finished_monotonic_ns": 2009503482209199,
+        "executor_finished_ns": 2009503482341871,
+        "executor_started_ns": 2009503215897404,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 13,
+        "request_commit_ns": 29080,
+        "request_commit_residual_ns": 2590,
+        "request_ids": [
+          "57003"
+        ],
+        "rust_completion_received_monotonic_ns": 2009503482341831,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009503482373982,
+        "state_graph_publication_ns": 23210,
+        "state_graph_publication_started_monotonic_ns": 2009503482350772,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 240,
+          "graph_publish": {
+            "batch_validation_ns": 850,
+            "dependency_resolution_ns": 700,
+            "graph_transaction": {
+              "commit_ns": 2020,
+              "object_validation_ns": 940,
+              "residual_ns": 0,
+              "structural_validation_ns": 680,
+              "total_ns": 3640
+            },
+            "graph_transaction_ns": 4130,
+            "object_identity_ns": 3870,
+            "payload_hash_ns": 5800,
+            "projection_commit_ns": 1310,
+            "residual_ns": 1660,
+            "total_ns": 18320
+          },
+          "graph_publish_call_ns": 19790,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 2250,
+          "residual_ns": 770,
+          "state_reference_prepare_ns": 60,
+          "total_ns": 23210
+        },
+        "state_release_completed_ns": 2009503482379512,
+        "state_release_residual_ns": 170,
+        "terminal_publication_prepare_ns": 3280,
+        "timing_record_ns": 210,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 3,
+        "tracked_active_states_after_completion": 4,
+        "worker_metrics_ns": 730
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 13,
+        "batch_enqueued_ns": 2009503509966975,
+        "batch_id": 5,
+        "cohort_resolution_ns": 160,
+        "completion_stage_ns": 19761,
+        "cpp_executor_finished_monotonic_ns": 2009503776361042,
+        "executor_finished_ns": 2009503776540175,
+        "executor_started_ns": 2009503509973025,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 12,
+        "request_commit_ns": 55981,
+        "request_commit_residual_ns": 6710,
+        "request_ids": [
+          "57004"
+        ],
+        "rust_completion_received_monotonic_ns": 2009503776539955,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009503776607127,
+        "state_graph_publication_ns": 43561,
+        "state_graph_publication_started_monotonic_ns": 2009503776563566,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 420,
+          "graph_publish": {
+            "batch_validation_ns": 1480,
+            "dependency_resolution_ns": 1020,
+            "graph_transaction": {
+              "commit_ns": 7170,
+              "object_validation_ns": 2050,
+              "residual_ns": 0,
+              "structural_validation_ns": 1931,
+              "total_ns": 11151
+            },
+            "graph_transaction_ns": 11991,
+            "object_identity_ns": 7470,
+            "payload_hash_ns": 10350,
+            "projection_commit_ns": 1210,
+            "residual_ns": 3270,
+            "total_ns": 36791
+          },
+          "graph_publish_call_ns": 39411,
+          "identity_assignment_ns": 260,
+          "resident_map_commit_ns": 1710,
+          "residual_ns": 1700,
+          "state_reference_prepare_ns": 60,
+          "total_ns": 43561
+        },
+        "state_release_completed_ns": 2009503776619217,
+        "state_release_residual_ns": 540,
+        "terminal_publication_prepare_ns": 5710,
+        "timing_record_ns": 350,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 4,
+        "tracked_active_states_after_completion": 5,
+        "worker_metrics_ns": 2600
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 12,
+        "batch_enqueued_ns": 2009503804459505,
+        "batch_id": 6,
+        "cohort_resolution_ns": 310,
+        "completion_stage_ns": 11580,
+        "cpp_executor_finished_monotonic_ns": 2009504070545606,
+        "executor_finished_ns": 2009504070665718,
+        "executor_started_ns": 2009503804468435,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 11,
+        "request_commit_ns": 29451,
+        "request_commit_residual_ns": 2480,
+        "request_ids": [
+          "57005"
+        ],
+        "rust_completion_received_monotonic_ns": 2009504070665688,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009504070702239,
+        "state_graph_publication_ns": 23181,
+        "state_graph_publication_started_monotonic_ns": 2009504070679058,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 130,
+          "graph_publish": {
+            "batch_validation_ns": 710,
+            "dependency_resolution_ns": 720,
+            "graph_transaction": {
+              "commit_ns": 2210,
+              "object_validation_ns": 1000,
+              "residual_ns": 0,
+              "structural_validation_ns": 750,
+              "total_ns": 3960
+            },
+            "graph_transaction_ns": 4510,
+            "object_identity_ns": 4430,
+            "payload_hash_ns": 7611,
+            "projection_commit_ns": 290,
+            "residual_ns": 1630,
+            "total_ns": 19901
+          },
+          "graph_publish_call_ns": 21171,
+          "identity_assignment_ns": 50,
+          "resident_map_commit_ns": 1070,
+          "residual_ns": 700,
+          "state_reference_prepare_ns": 60,
+          "total_ns": 23181
+        },
+        "state_release_completed_ns": 2009504070708249,
+        "state_release_residual_ns": 190,
+        "terminal_publication_prepare_ns": 3790,
+        "timing_record_ns": 190,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 5,
+        "tracked_active_states_after_completion": 6,
+        "worker_metrics_ns": 1000
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 11,
+        "batch_enqueued_ns": 2009504098121328,
+        "batch_id": 7,
+        "cohort_resolution_ns": 150,
+        "completion_stage_ns": 7360,
+        "cpp_executor_finished_monotonic_ns": 2009504364322571,
+        "executor_finished_ns": 2009504364429573,
+        "executor_started_ns": 2009504098125918,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 10,
+        "request_commit_ns": 24261,
+        "request_commit_residual_ns": 2300,
+        "request_ids": [
+          "57006"
+        ],
+        "rust_completion_received_monotonic_ns": 2009504364429543,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009504364457704,
+        "state_graph_publication_ns": 19271,
+        "state_graph_publication_started_monotonic_ns": 2009504364438433,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 140,
+          "graph_publish": {
+            "batch_validation_ns": 690,
+            "dependency_resolution_ns": 560,
+            "graph_transaction": {
+              "commit_ns": 1490,
+              "object_validation_ns": 830,
+              "residual_ns": 0,
+              "structural_validation_ns": 570,
+              "total_ns": 2890
+            },
+            "graph_transaction_ns": 3600,
+            "object_identity_ns": 4171,
+            "payload_hash_ns": 5470,
+            "projection_commit_ns": 270,
+            "residual_ns": 1370,
+            "total_ns": 16131
+          },
+          "graph_publish_call_ns": 17321,
+          "identity_assignment_ns": 50,
+          "resident_map_commit_ns": 850,
+          "residual_ns": 840,
+          "state_reference_prepare_ns": 70,
+          "total_ns": 19271
+        },
+        "state_release_completed_ns": 2009504364462394,
+        "state_release_residual_ns": 180,
+        "terminal_publication_prepare_ns": 2690,
+        "timing_record_ns": 180,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 6,
+        "tracked_active_states_after_completion": 7,
+        "worker_metrics_ns": 870
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 10,
+        "batch_enqueued_ns": 2009504391808562,
+        "batch_id": 8,
+        "cohort_resolution_ns": 140,
+        "completion_stage_ns": 6290,
+        "cpp_executor_finished_monotonic_ns": 2009504658086116,
+        "executor_finished_ns": 2009504658193058,
+        "executor_started_ns": 2009504391812502,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 9,
+        "request_commit_ns": 34381,
+        "request_commit_residual_ns": 2050,
+        "request_ids": [
+          "57007"
+        ],
+        "rust_completion_received_monotonic_ns": 2009504658193008,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009504658222179,
+        "state_graph_publication_ns": 21381,
+        "state_graph_publication_started_monotonic_ns": 2009504658200798,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 70,
+          "graph_publish": {
+            "batch_validation_ns": 620,
+            "dependency_resolution_ns": 490,
+            "graph_transaction": {
+              "commit_ns": 1401,
+              "object_validation_ns": 800,
+              "residual_ns": 0,
+              "structural_validation_ns": 600,
+              "total_ns": 2801
+            },
+            "graph_transaction_ns": 3261,
+            "object_identity_ns": 3700,
+            "payload_hash_ns": 5280,
+            "projection_commit_ns": 1330,
+            "residual_ns": 1320,
+            "total_ns": 16001
+          },
+          "graph_publish_call_ns": 17151,
+          "identity_assignment_ns": 90,
+          "resident_map_commit_ns": 3360,
+          "residual_ns": 650,
+          "state_reference_prepare_ns": 60,
+          "total_ns": 21381
+        },
+        "state_release_completed_ns": 2009504658234929,
+        "state_release_residual_ns": 180,
+        "terminal_publication_prepare_ns": 10950,
+        "timing_record_ns": 210,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 7,
+        "tracked_active_states_after_completion": 8,
+        "worker_metrics_ns": 880
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 9,
+        "batch_enqueued_ns": 2009504684545416,
+        "batch_id": 9,
+        "cohort_resolution_ns": 320,
+        "completion_stage_ns": 6971,
+        "cpp_executor_finished_monotonic_ns": 2009504950757279,
+        "executor_finished_ns": 2009504950897021,
+        "executor_started_ns": 2009504684551816,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 8,
+        "request_commit_ns": 24430,
+        "request_commit_residual_ns": 2520,
+        "request_ids": [
+          "57008"
+        ],
+        "rust_completion_received_monotonic_ns": 2009504950896991,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009504950924852,
+        "state_graph_publication_ns": 18830,
+        "state_graph_publication_started_monotonic_ns": 2009504950906022,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 160,
+          "graph_publish": {
+            "batch_validation_ns": 530,
+            "dependency_resolution_ns": 460,
+            "graph_transaction": {
+              "commit_ns": 1620,
+              "object_validation_ns": 710,
+              "residual_ns": 0,
+              "structural_validation_ns": 600,
+              "total_ns": 2930
+            },
+            "graph_transaction_ns": 3410,
+            "object_identity_ns": 4040,
+            "payload_hash_ns": 5370,
+            "projection_commit_ns": 290,
+            "residual_ns": 1460,
+            "total_ns": 15560
+          },
+          "graph_publish_call_ns": 16600,
+          "identity_assignment_ns": 40,
+          "resident_map_commit_ns": 1210,
+          "residual_ns": 770,
+          "state_reference_prepare_ns": 50,
+          "total_ns": 18830
+        },
+        "state_release_completed_ns": 2009504950929962,
+        "state_release_residual_ns": 200,
+        "terminal_publication_prepare_ns": 3080,
+        "timing_record_ns": 150,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 8,
+        "tracked_active_states_after_completion": 9,
+        "worker_metrics_ns": 1020
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 8,
+        "batch_enqueued_ns": 2009504978245259,
+        "batch_id": 10,
+        "cohort_resolution_ns": 130,
+        "completion_stage_ns": 8040,
+        "cpp_executor_finished_monotonic_ns": 2009505244572244,
+        "executor_finished_ns": 2009505244719818,
+        "executor_started_ns": 2009504978249780,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 7,
+        "request_commit_ns": 24630,
+        "request_commit_residual_ns": 2340,
+        "request_ids": [
+          "57009"
+        ],
+        "rust_completion_received_monotonic_ns": 2009505244719788,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009505244749148,
+        "state_graph_publication_ns": 19350,
+        "state_graph_publication_started_monotonic_ns": 2009505244729798,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 170,
+          "graph_publish": {
+            "batch_validation_ns": 630,
+            "dependency_resolution_ns": 600,
+            "graph_transaction": {
+              "commit_ns": 1540,
+              "object_validation_ns": 790,
+              "residual_ns": 0,
+              "structural_validation_ns": 690,
+              "total_ns": 3020
+            },
+            "graph_transaction_ns": 3460,
+            "object_identity_ns": 3940,
+            "payload_hash_ns": 5690,
+            "projection_commit_ns": 240,
+            "residual_ns": 1460,
+            "total_ns": 16020
+          },
+          "graph_publish_call_ns": 17210,
+          "identity_assignment_ns": 50,
+          "resident_map_commit_ns": 810,
+          "residual_ns": 1070,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 19350
+        },
+        "state_release_completed_ns": 2009505244753948,
+        "state_release_residual_ns": 200,
+        "terminal_publication_prepare_ns": 2940,
+        "timing_record_ns": 250,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 9,
+        "tracked_active_states_after_completion": 10,
+        "worker_metrics_ns": 1130
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 7,
+        "batch_enqueued_ns": 2009505272171488,
+        "batch_id": 11,
+        "cohort_resolution_ns": 140,
+        "completion_stage_ns": 6340,
+        "cpp_executor_finished_monotonic_ns": 2009505538328999,
+        "executor_finished_ns": 2009505538429071,
+        "executor_started_ns": 2009505272175808,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 6,
+        "request_commit_ns": 22371,
+        "request_commit_residual_ns": 2120,
+        "request_ids": [
+          "57010"
+        ],
+        "rust_completion_received_monotonic_ns": 2009505538429001,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009505538454472,
+        "state_graph_publication_ns": 17451,
+        "state_graph_publication_started_monotonic_ns": 2009505538437021,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 90,
+          "graph_publish": {
+            "batch_validation_ns": 570,
+            "dependency_resolution_ns": 440,
+            "graph_transaction": {
+              "commit_ns": 1430,
+              "object_validation_ns": 800,
+              "residual_ns": 0,
+              "structural_validation_ns": 610,
+              "total_ns": 2840
+            },
+            "graph_transaction_ns": 3350,
+            "object_identity_ns": 3711,
+            "payload_hash_ns": 5110,
+            "projection_commit_ns": 250,
+            "residual_ns": 1280,
+            "total_ns": 14711
+          },
+          "graph_publish_call_ns": 15741,
+          "identity_assignment_ns": 50,
+          "resident_map_commit_ns": 690,
+          "residual_ns": 780,
+          "state_reference_prepare_ns": 100,
+          "total_ns": 17451
+        },
+        "state_release_completed_ns": 2009505538459092,
+        "state_release_residual_ns": 190,
+        "terminal_publication_prepare_ns": 2800,
+        "timing_record_ns": 190,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 10,
+        "tracked_active_states_after_completion": 11,
+        "worker_metrics_ns": 980
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 6,
+        "batch_enqueued_ns": 2009505565760769,
+        "batch_id": 12,
+        "cohort_resolution_ns": 180,
+        "completion_stage_ns": 6150,
+        "cpp_executor_finished_monotonic_ns": 2009505831854209,
+        "executor_finished_ns": 2009505831979672,
+        "executor_started_ns": 2009505565764899,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 5,
+        "request_commit_ns": 40130,
+        "request_commit_residual_ns": 2290,
+        "request_ids": [
+          "57011"
+        ],
+        "rust_completion_received_monotonic_ns": 2009505831979641,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009505832023102,
+        "state_graph_publication_ns": 35600,
+        "state_graph_publication_started_monotonic_ns": 2009505831987502,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 70,
+          "graph_publish": {
+            "batch_validation_ns": 540,
+            "dependency_resolution_ns": 420,
+            "graph_transaction": {
+              "commit_ns": 5640,
+              "object_validation_ns": 14430,
+              "residual_ns": 0,
+              "structural_validation_ns": 570,
+              "total_ns": 20640
+            },
+            "graph_transaction_ns": 21050,
+            "object_identity_ns": 3860,
+            "payload_hash_ns": 4990,
+            "projection_commit_ns": 290,
+            "residual_ns": 1280,
+            "total_ns": 32430
+          },
+          "graph_publish_call_ns": 33820,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 870,
+          "residual_ns": 670,
+          "state_reference_prepare_ns": 70,
+          "total_ns": 35600
+        },
+        "state_release_completed_ns": 2009505832027302,
+        "state_release_residual_ns": 190,
+        "terminal_publication_prepare_ns": 2240,
+        "timing_record_ns": 180,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 11,
+        "tracked_active_states_after_completion": 12,
+        "worker_metrics_ns": 980
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 5,
+        "batch_enqueued_ns": 2009505859422102,
+        "batch_id": 13,
+        "cohort_resolution_ns": 140,
+        "completion_stage_ns": 6240,
+        "cpp_executor_finished_monotonic_ns": 2009506125608353,
+        "executor_finished_ns": 2009506125736586,
+        "executor_started_ns": 2009505859426262,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 4,
+        "request_commit_ns": 22171,
+        "request_commit_residual_ns": 2370,
+        "request_ids": [
+          "57012"
+        ],
+        "rust_completion_received_monotonic_ns": 2009506125736556,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009506125761957,
+        "state_graph_publication_ns": 17301,
+        "state_graph_publication_started_monotonic_ns": 2009506125744656,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 100,
+          "graph_publish": {
+            "batch_validation_ns": 480,
+            "dependency_resolution_ns": 450,
+            "graph_transaction": {
+              "commit_ns": 1430,
+              "object_validation_ns": 721,
+              "residual_ns": 0,
+              "structural_validation_ns": 550,
+              "total_ns": 2701
+            },
+            "graph_transaction_ns": 3151,
+            "object_identity_ns": 3710,
+            "payload_hash_ns": 4930,
+            "projection_commit_ns": 270,
+            "residual_ns": 1290,
+            "total_ns": 14281
+          },
+          "graph_publish_call_ns": 15511,
+          "identity_assignment_ns": 50,
+          "resident_map_commit_ns": 780,
+          "residual_ns": 800,
+          "state_reference_prepare_ns": 60,
+          "total_ns": 17301
+        },
+        "state_release_completed_ns": 2009506125766287,
+        "state_release_residual_ns": 180,
+        "terminal_publication_prepare_ns": 2500,
+        "timing_record_ns": 200,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 12,
+        "tracked_active_states_after_completion": 13,
+        "worker_metrics_ns": 970
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 4,
+        "batch_enqueued_ns": 2009506153041053,
+        "batch_id": 14,
+        "cohort_resolution_ns": 70,
+        "completion_stage_ns": 6350,
+        "cpp_executor_finished_monotonic_ns": 2009506419211205,
+        "executor_finished_ns": 2009506419317107,
+        "executor_started_ns": 2009506153045223,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 3,
+        "request_commit_ns": 22120,
+        "request_commit_residual_ns": 2310,
+        "request_ids": [
+          "57013"
+        ],
+        "rust_completion_received_monotonic_ns": 2009506419317077,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009506419342127,
+        "state_graph_publication_ns": 17220,
+        "state_graph_publication_started_monotonic_ns": 2009506419324907,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 120,
+          "graph_publish": {
+            "batch_validation_ns": 560,
+            "dependency_resolution_ns": 480,
+            "graph_transaction": {
+              "commit_ns": 1490,
+              "object_validation_ns": 640,
+              "residual_ns": 0,
+              "structural_validation_ns": 560,
+              "total_ns": 2690
+            },
+            "graph_transaction_ns": 3100,
+            "object_identity_ns": 3850,
+            "payload_hash_ns": 5050,
+            "projection_commit_ns": 330,
+            "residual_ns": 1030,
+            "total_ns": 14400
+          },
+          "graph_publish_call_ns": 15480,
+          "identity_assignment_ns": 40,
+          "resident_map_commit_ns": 740,
+          "residual_ns": 800,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 17220
+        },
+        "state_release_completed_ns": 2009506419346637,
+        "state_release_residual_ns": 190,
+        "terminal_publication_prepare_ns": 2590,
+        "timing_record_ns": 170,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 13,
+        "tracked_active_states_after_completion": 14,
+        "worker_metrics_ns": 800
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 3,
+        "batch_enqueued_ns": 2009506446650755,
+        "batch_id": 15,
+        "cohort_resolution_ns": 100,
+        "completion_stage_ns": 7440,
+        "cpp_executor_finished_monotonic_ns": 2009506712854857,
+        "executor_finished_ns": 2009506712977699,
+        "executor_started_ns": 2009506446655405,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 2,
+        "request_commit_ns": 27061,
+        "request_commit_residual_ns": 2160,
+        "request_ids": [
+          "57014"
+        ],
+        "rust_completion_received_monotonic_ns": 2009506712977669,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009506713009120,
+        "state_graph_publication_ns": 22371,
+        "state_graph_publication_started_monotonic_ns": 2009506712986749,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 170,
+          "graph_publish": {
+            "batch_validation_ns": 770,
+            "dependency_resolution_ns": 580,
+            "graph_transaction": {
+              "commit_ns": 1770,
+              "object_validation_ns": 770,
+              "residual_ns": 0,
+              "structural_validation_ns": 770,
+              "total_ns": 3310
+            },
+            "graph_transaction_ns": 3800,
+            "object_identity_ns": 4070,
+            "payload_hash_ns": 5691,
+            "projection_commit_ns": 1420,
+            "residual_ns": 1380,
+            "total_ns": 17711
+          },
+          "graph_publish_call_ns": 18981,
+          "identity_assignment_ns": 50,
+          "resident_map_commit_ns": 2270,
+          "residual_ns": 850,
+          "state_reference_prepare_ns": 50,
+          "total_ns": 22371
+        },
+        "state_release_completed_ns": 2009506713013510,
+        "state_release_residual_ns": 190,
+        "terminal_publication_prepare_ns": 2530,
+        "timing_record_ns": 190,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 14,
+        "tracked_active_states_after_completion": 15,
+        "worker_metrics_ns": 1020
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 2,
+        "batch_enqueued_ns": 2009506740392339,
+        "batch_id": 16,
+        "cohort_resolution_ns": 370,
+        "completion_stage_ns": 8810,
+        "cpp_executor_finished_monotonic_ns": 2009507007831466,
+        "executor_finished_ns": 2009507007977699,
+        "executor_started_ns": 2009506740397599,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 1,
+        "request_commit_ns": 46521,
+        "request_commit_residual_ns": 3820,
+        "request_ids": [
+          "57015"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507007977669,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009507008027580,
+        "state_graph_publication_ns": 38831,
+        "state_graph_publication_started_monotonic_ns": 2009507007988749,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 130,
+          "graph_publish": {
+            "batch_validation_ns": 690,
+            "dependency_resolution_ns": 870,
+            "graph_transaction": {
+              "commit_ns": 2090,
+              "object_validation_ns": 1060,
+              "residual_ns": 0,
+              "structural_validation_ns": 590,
+              "total_ns": 3740
+            },
+            "graph_transaction_ns": 4930,
+            "object_identity_ns": 20481,
+            "payload_hash_ns": 6670,
+            "projection_commit_ns": 300,
+            "residual_ns": 1670,
+            "total_ns": 35611
+          },
+          "graph_publish_call_ns": 36651,
+          "identity_assignment_ns": 370,
+          "resident_map_commit_ns": 860,
+          "residual_ns": 770,
+          "state_reference_prepare_ns": 50,
+          "total_ns": 38831
+        },
+        "state_release_completed_ns": 2009507008034480,
+        "state_release_residual_ns": 170,
+        "terminal_publication_prepare_ns": 3870,
+        "timing_record_ns": 260,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 15,
+        "tracked_active_states_after_completion": 16,
+        "worker_metrics_ns": 910
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 1,
+        "batch_enqueued_ns": 2009507036872359,
+        "batch_id": 17,
+        "cohort_resolution_ns": 250,
+        "completion_stage_ns": 20811,
+        "cpp_executor_finished_monotonic_ns": 2009507303087211,
+        "executor_finished_ns": 2009507303210083,
+        "executor_started_ns": 2009507036882009,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 62421,
+        "request_commit_residual_ns": 11680,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507303210053,
+        "scheduler_requeue_ns": 3790,
+        "state_graph_publication_completed_monotonic_ns": 2009507303283135,
+        "state_graph_publication_ns": 46951,
+        "state_graph_publication_started_monotonic_ns": 2009507303236184,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 390,
+          "graph_publish": {
+            "batch_validation_ns": 1830,
+            "dependency_resolution_ns": 1140,
+            "graph_transaction": {
+              "commit_ns": 3270,
+              "object_validation_ns": 2450,
+              "residual_ns": 0,
+              "structural_validation_ns": 2021,
+              "total_ns": 7741
+            },
+            "graph_transaction_ns": 9051,
+            "object_identity_ns": 8680,
+            "payload_hash_ns": 14550,
+            "projection_commit_ns": 860,
+            "residual_ns": 4050,
+            "total_ns": 40161
+          },
+          "graph_publish_call_ns": 42451,
+          "identity_assignment_ns": 300,
+          "resident_map_commit_ns": 1680,
+          "residual_ns": 2000,
+          "state_reference_prepare_ns": 130,
+          "total_ns": 46951
+        },
+        "state_release_completed_ns": 2009507303297115,
+        "state_release_residual_ns": 550,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 520,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 16,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 3000
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 2009507303789435,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507303663773,
+        "batch_id": 18,
+        "cohort_resolution_ns": 440,
+        "completion_stage_ns": 8380,
+        "cpp_executor_finished_monotonic_ns": 2009507333141184,
+        "executor_finished_ns": 2009507333247476,
+        "executor_started_ns": 2009507303671353,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 40741,
+        "request_commit_residual_ns": 8730,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507333247426,
+        "scheduler_requeue_ns": 2350,
+        "state_graph_publication_completed_monotonic_ns": 2009507333289447,
+        "state_graph_publication_ns": 29661,
+        "state_graph_publication_started_monotonic_ns": 2009507333259786,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 130,
+          "graph_publish": {
+            "batch_validation_ns": 830,
+            "dependency_resolution_ns": 760,
+            "graph_transaction": {
+              "commit_ns": 8570,
+              "object_validation_ns": 2350,
+              "residual_ns": 0,
+              "structural_validation_ns": 670,
+              "total_ns": 11590
+            },
+            "graph_transaction_ns": 12080,
+            "object_identity_ns": 4530,
+            "payload_hash_ns": 6400,
+            "projection_commit_ns": 350,
+            "residual_ns": 1741,
+            "total_ns": 26691
+          },
+          "graph_publish_call_ns": 27721,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 870,
+          "residual_ns": 620,
+          "state_reference_prepare_ns": 220,
+          "total_ns": 29661
+        },
+        "state_release_completed_ns": 2009507333298707,
+        "state_release_residual_ns": 220,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 250,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 1450
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507333573913,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507333478511,
+        "batch_id": 19,
+        "cohort_resolution_ns": 40,
+        "completion_stage_ns": 3930,
+        "cpp_executor_finished_monotonic_ns": 2009507362711807,
+        "executor_finished_ns": 2009507362820200,
+        "executor_started_ns": 2009507333483601,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 23110,
+        "request_commit_residual_ns": 5620,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507362820110,
+        "scheduler_requeue_ns": 670,
+        "state_graph_publication_completed_monotonic_ns": 2009507362842140,
+        "state_graph_publication_ns": 16820,
+        "state_graph_publication_started_monotonic_ns": 2009507362825320,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 60,
+          "graph_publish": {
+            "batch_validation_ns": 530,
+            "dependency_resolution_ns": 400,
+            "graph_transaction": {
+              "commit_ns": 3280,
+              "object_validation_ns": 1000,
+              "residual_ns": 0,
+              "structural_validation_ns": 420,
+              "total_ns": 4700
+            },
+            "graph_transaction_ns": 4920,
+            "object_identity_ns": 3350,
+            "payload_hash_ns": 4570,
+            "projection_commit_ns": 130,
+            "residual_ns": 700,
+            "total_ns": 14600
+          },
+          "graph_publish_call_ns": 15370,
+          "identity_assignment_ns": 70,
+          "resident_map_commit_ns": 750,
+          "residual_ns": 520,
+          "state_reference_prepare_ns": 50,
+          "total_ns": 16820
+        },
+        "state_release_completed_ns": 2009507362847910,
+        "state_release_residual_ns": 160,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 120,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 470
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507363097125,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507363008333,
+        "batch_id": 20,
+        "cohort_resolution_ns": 50,
+        "completion_stage_ns": 3080,
+        "cpp_executor_finished_monotonic_ns": 2009507392060366,
+        "executor_finished_ns": 2009507392156898,
+        "executor_started_ns": 2009507363011003,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 18241,
+        "request_commit_residual_ns": 3890,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507392156848,
+        "scheduler_requeue_ns": 580,
+        "state_graph_publication_completed_monotonic_ns": 2009507392174579,
+        "state_graph_publication_ns": 13771,
+        "state_graph_publication_started_monotonic_ns": 2009507392160808,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 420,
+            "dependency_resolution_ns": 320,
+            "graph_transaction": {
+              "commit_ns": 2570,
+              "object_validation_ns": 761,
+              "residual_ns": 0,
+              "structural_validation_ns": 290,
+              "total_ns": 3621
+            },
+            "graph_transaction_ns": 3771,
+            "object_identity_ns": 2990,
+            "payload_hash_ns": 3620,
+            "projection_commit_ns": 170,
+            "residual_ns": 570,
+            "total_ns": 11861
+          },
+          "graph_publish_call_ns": 12541,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 600,
+          "residual_ns": 440,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 13771
+        },
+        "state_release_completed_ns": 2009507392178629,
+        "state_release_residual_ns": 80,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 130,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 280
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507392418944,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507392333812,
+        "batch_id": 21,
+        "cohort_resolution_ns": 30,
+        "completion_stage_ns": 2910,
+        "cpp_executor_finished_monotonic_ns": 2009507421333794,
+        "executor_finished_ns": 2009507421436896,
+        "executor_started_ns": 2009507392336412,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 17560,
+        "request_commit_residual_ns": 4160,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507421436866,
+        "scheduler_requeue_ns": 590,
+        "state_graph_publication_completed_monotonic_ns": 2009507421453276,
+        "state_graph_publication_ns": 12810,
+        "state_graph_publication_started_monotonic_ns": 2009507421440466,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 280,
+            "dependency_resolution_ns": 350,
+            "graph_transaction": {
+              "commit_ns": 2300,
+              "object_validation_ns": 730,
+              "residual_ns": 0,
+              "structural_validation_ns": 260,
+              "total_ns": 3290
+            },
+            "graph_transaction_ns": 3450,
+            "object_identity_ns": 2910,
+            "payload_hash_ns": 3340,
+            "projection_commit_ns": 140,
+            "residual_ns": 660,
+            "total_ns": 11130
+          },
+          "graph_publish_call_ns": 11690,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 530,
+          "residual_ns": 390,
+          "state_reference_prepare_ns": 50,
+          "total_ns": 12810
+        },
+        "state_release_completed_ns": 2009507421457736,
+        "state_release_residual_ns": 80,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 130,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 260
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507421714221,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507421622769,
+        "batch_id": 22,
+        "cohort_resolution_ns": 50,
+        "completion_stage_ns": 2620,
+        "cpp_executor_finished_monotonic_ns": 2009507450638092,
+        "executor_finished_ns": 2009507450744134,
+        "executor_started_ns": 2009507421625400,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 16900,
+        "request_commit_residual_ns": 3720,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507450744104,
+        "scheduler_requeue_ns": 530,
+        "state_graph_publication_completed_monotonic_ns": 2009507450760034,
+        "state_graph_publication_ns": 12650,
+        "state_graph_publication_started_monotonic_ns": 2009507450747384,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 370,
+            "dependency_resolution_ns": 280,
+            "graph_transaction": {
+              "commit_ns": 2180,
+              "object_validation_ns": 600,
+              "residual_ns": 0,
+              "structural_validation_ns": 270,
+              "total_ns": 3050
+            },
+            "graph_transaction_ns": 3180,
+            "object_identity_ns": 3060,
+            "payload_hash_ns": 3270,
+            "projection_commit_ns": 110,
+            "residual_ns": 640,
+            "total_ns": 10910
+          },
+          "graph_publish_call_ns": 11470,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 570,
+          "residual_ns": 400,
+          "state_reference_prepare_ns": 60,
+          "total_ns": 12650
+        },
+        "state_release_completed_ns": 2009507450764034,
+        "state_release_residual_ns": 70,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 120,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 260
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507450997279,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507450914077,
+        "batch_id": 23,
+        "cohort_resolution_ns": 40,
+        "completion_stage_ns": 2600,
+        "cpp_executor_finished_monotonic_ns": 2009507479972050,
+        "executor_finished_ns": 2009507480085462,
+        "executor_started_ns": 2009507450917077,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 16731,
+        "request_commit_residual_ns": 3650,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507480085432,
+        "scheduler_requeue_ns": 600,
+        "state_graph_publication_completed_monotonic_ns": 2009507480101173,
+        "state_graph_publication_ns": 12481,
+        "state_graph_publication_started_monotonic_ns": 2009507480088692,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 370,
+            "dependency_resolution_ns": 290,
+            "graph_transaction": {
+              "commit_ns": 2150,
+              "object_validation_ns": 710,
+              "residual_ns": 0,
+              "structural_validation_ns": 260,
+              "total_ns": 3120
+            },
+            "graph_transaction_ns": 3240,
+            "object_identity_ns": 2900,
+            "payload_hash_ns": 3231,
+            "projection_commit_ns": 120,
+            "residual_ns": 630,
+            "total_ns": 10781
+          },
+          "graph_publish_call_ns": 11361,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 560,
+          "residual_ns": 360,
+          "state_reference_prepare_ns": 50,
+          "total_ns": 12481
+        },
+        "state_release_completed_ns": 2009507480105163,
+        "state_release_residual_ns": 70,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 130,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 260
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507480336068,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507480247346,
+        "batch_id": 24,
+        "cohort_resolution_ns": 40,
+        "completion_stage_ns": 2300,
+        "cpp_executor_finished_monotonic_ns": 2009507509331269,
+        "executor_finished_ns": 2009507509424471,
+        "executor_started_ns": 2009507480249906,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 16090,
+        "request_commit_residual_ns": 3630,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507509424441,
+        "scheduler_requeue_ns": 480,
+        "state_graph_publication_completed_monotonic_ns": 2009507509439321,
+        "state_graph_publication_ns": 11980,
+        "state_graph_publication_started_monotonic_ns": 2009507509427341,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 350,
+            "dependency_resolution_ns": 290,
+            "graph_transaction": {
+              "commit_ns": 2130,
+              "object_validation_ns": 660,
+              "residual_ns": 0,
+              "structural_validation_ns": 210,
+              "total_ns": 3000
+            },
+            "graph_transaction_ns": 3110,
+            "object_identity_ns": 2850,
+            "payload_hash_ns": 3140,
+            "projection_commit_ns": 90,
+            "residual_ns": 570,
+            "total_ns": 10400
+          },
+          "graph_publish_call_ns": 10850,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 610,
+          "residual_ns": 330,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 11980
+        },
+        "state_release_completed_ns": 2009507509443201,
+        "state_release_residual_ns": 60,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 150,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 240
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507509684996,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507509597035,
+        "batch_id": 25,
+        "cohort_resolution_ns": 40,
+        "completion_stage_ns": 2300,
+        "cpp_executor_finished_monotonic_ns": 2009507538644757,
+        "executor_finished_ns": 2009507538736579,
+        "executor_started_ns": 2009507509599645,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 16161,
+        "request_commit_residual_ns": 4061,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507538736549,
+        "scheduler_requeue_ns": 490,
+        "state_graph_publication_completed_monotonic_ns": 2009507538751139,
+        "state_graph_publication_ns": 11610,
+        "state_graph_publication_started_monotonic_ns": 2009507538739529,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 280,
+            "dependency_resolution_ns": 260,
+            "graph_transaction": {
+              "commit_ns": 2060,
+              "object_validation_ns": 700,
+              "residual_ns": 0,
+              "structural_validation_ns": 240,
+              "total_ns": 3000
+            },
+            "graph_transaction_ns": 3140,
+            "object_identity_ns": 2590,
+            "payload_hash_ns": 3060,
+            "projection_commit_ns": 100,
+            "residual_ns": 530,
+            "total_ns": 9960
+          },
+          "graph_publish_call_ns": 10460,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 550,
+          "residual_ns": 410,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 11610
+        },
+        "state_release_completed_ns": 2009507538755350,
+        "state_release_residual_ns": 50,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 130,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 220
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507538991114,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507538907523,
+        "batch_id": 26,
+        "cohort_resolution_ns": 40,
+        "completion_stage_ns": 2281,
+        "cpp_executor_finished_monotonic_ns": 2009507567868104,
+        "executor_finished_ns": 2009507567961375,
+        "executor_started_ns": 2009507538909953,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 15690,
+        "request_commit_residual_ns": 3610,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507567961345,
+        "scheduler_requeue_ns": 510,
+        "state_graph_publication_completed_monotonic_ns": 2009507567975876,
+        "state_graph_publication_ns": 11570,
+        "state_graph_publication_started_monotonic_ns": 2009507567964306,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 60,
+          "graph_publish": {
+            "batch_validation_ns": 290,
+            "dependency_resolution_ns": 240,
+            "graph_transaction": {
+              "commit_ns": 2020,
+              "object_validation_ns": 700,
+              "residual_ns": 0,
+              "structural_validation_ns": 250,
+              "total_ns": 2970
+            },
+            "graph_transaction_ns": 3100,
+            "object_identity_ns": 2720,
+            "payload_hash_ns": 2980,
+            "projection_commit_ns": 110,
+            "residual_ns": 530,
+            "total_ns": 9970
+          },
+          "graph_publish_call_ns": 10430,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 570,
+          "residual_ns": 370,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 11570
+        },
+        "state_release_completed_ns": 2009507567979726,
+        "state_release_residual_ns": 50,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 110,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 290
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507568212041,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507568131889,
+        "batch_id": 27,
+        "cohort_resolution_ns": 40,
+        "completion_stage_ns": 2390,
+        "cpp_executor_finished_monotonic_ns": 2009507597110790,
+        "executor_finished_ns": 2009507597198192,
+        "executor_started_ns": 2009507568134399,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 16290,
+        "request_commit_residual_ns": 3810,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507597198162,
+        "scheduler_requeue_ns": 530,
+        "state_graph_publication_completed_monotonic_ns": 2009507597213222,
+        "state_graph_publication_ns": 11950,
+        "state_graph_publication_started_monotonic_ns": 2009507597201272,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 330,
+            "dependency_resolution_ns": 230,
+            "graph_transaction": {
+              "commit_ns": 2070,
+              "object_validation_ns": 810,
+              "residual_ns": 0,
+              "structural_validation_ns": 230,
+              "total_ns": 3110
+            },
+            "graph_transaction_ns": 3240,
+            "object_identity_ns": 2810,
+            "payload_hash_ns": 2930,
+            "projection_commit_ns": 110,
+            "residual_ns": 560,
+            "total_ns": 10210
+          },
+          "graph_publish_call_ns": 10700,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 610,
+          "residual_ns": 450,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 11950
+        },
+        "state_release_completed_ns": 2009507597217262,
+        "state_release_residual_ns": 50,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 150,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 300
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507597434107,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507597353065,
+        "batch_id": 28,
+        "cohort_resolution_ns": 50,
+        "completion_stage_ns": 2441,
+        "cpp_executor_finished_monotonic_ns": 2009507626340507,
+        "executor_finished_ns": 2009507626425768,
+        "executor_started_ns": 2009507597355825,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 15760,
+        "request_commit_residual_ns": 3740,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507626425738,
+        "scheduler_requeue_ns": 400,
+        "state_graph_publication_completed_monotonic_ns": 2009507626440449,
+        "state_graph_publication_ns": 11620,
+        "state_graph_publication_started_monotonic_ns": 2009507626428829,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 270,
+            "dependency_resolution_ns": 270,
+            "graph_transaction": {
+              "commit_ns": 2010,
+              "object_validation_ns": 820,
+              "residual_ns": 0,
+              "structural_validation_ns": 240,
+              "total_ns": 3070
+            },
+            "graph_transaction_ns": 3200,
+            "object_identity_ns": 2740,
+            "payload_hash_ns": 2900,
+            "projection_commit_ns": 150,
+            "residual_ns": 560,
+            "total_ns": 10090
+          },
+          "graph_publish_call_ns": 10520,
+          "identity_assignment_ns": 70,
+          "resident_map_commit_ns": 560,
+          "residual_ns": 380,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 11620
+        },
+        "state_release_completed_ns": 2009507626444299,
+        "state_release_residual_ns": 50,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 110,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 230
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507626659983,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507626580772,
+        "batch_id": 29,
+        "cohort_resolution_ns": 50,
+        "completion_stage_ns": 2510,
+        "cpp_executor_finished_monotonic_ns": 2009507655591094,
+        "executor_finished_ns": 2009507655675675,
+        "executor_started_ns": 2009507626583302,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 15571,
+        "request_commit_residual_ns": 3730,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507655675635,
+        "scheduler_requeue_ns": 500,
+        "state_graph_publication_completed_monotonic_ns": 2009507655690156,
+        "state_graph_publication_ns": 11341,
+        "state_graph_publication_started_monotonic_ns": 2009507655678815,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 230,
+            "dependency_resolution_ns": 270,
+            "graph_transaction": {
+              "commit_ns": 2120,
+              "object_validation_ns": 670,
+              "residual_ns": 0,
+              "structural_validation_ns": 230,
+              "total_ns": 3020
+            },
+            "graph_transaction_ns": 3160,
+            "object_identity_ns": 2691,
+            "payload_hash_ns": 2810,
+            "projection_commit_ns": 100,
+            "residual_ns": 550,
+            "total_ns": 9811
+          },
+          "graph_publish_call_ns": 10251,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 610,
+          "residual_ns": 290,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 11341
+        },
+        "state_release_completed_ns": 2009507655694066,
+        "state_release_residual_ns": 50,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 130,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 210
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507655910640,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507655830208,
+        "batch_id": 30,
+        "cohort_resolution_ns": 50,
+        "completion_stage_ns": 2270,
+        "cpp_executor_finished_monotonic_ns": 2009507684822730,
+        "executor_finished_ns": 2009507684906792,
+        "executor_started_ns": 2009507655832669,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 15370,
+        "request_commit_residual_ns": 3770,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507684906762,
+        "scheduler_requeue_ns": 430,
+        "state_graph_publication_completed_monotonic_ns": 2009507684920902,
+        "state_graph_publication_ns": 11170,
+        "state_graph_publication_started_monotonic_ns": 2009507684909732,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 60,
+          "graph_publish": {
+            "batch_validation_ns": 310,
+            "dependency_resolution_ns": 260,
+            "graph_transaction": {
+              "commit_ns": 1870,
+              "object_validation_ns": 640,
+              "residual_ns": 0,
+              "structural_validation_ns": 230,
+              "total_ns": 2740
+            },
+            "graph_transaction_ns": 2870,
+            "object_identity_ns": 2700,
+            "payload_hash_ns": 2780,
+            "projection_commit_ns": 140,
+            "residual_ns": 580,
+            "total_ns": 9640
+          },
+          "graph_publish_call_ns": 10050,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 600,
+          "residual_ns": 320,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 11170
+        },
+        "state_release_completed_ns": 2009507684924762,
+        "state_release_residual_ns": 50,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 130,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 230
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507685141327,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507685061115,
+        "batch_id": 31,
+        "cohort_resolution_ns": 50,
+        "completion_stage_ns": 2130,
+        "cpp_executor_finished_monotonic_ns": 2009507714043536,
+        "executor_finished_ns": 2009507714139688,
+        "executor_started_ns": 2009507685063595,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 15121,
+        "request_commit_residual_ns": 3690,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507714139658,
+        "scheduler_requeue_ns": 450,
+        "state_graph_publication_completed_monotonic_ns": 2009507714153459,
+        "state_graph_publication_ns": 10981,
+        "state_graph_publication_started_monotonic_ns": 2009507714142478,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 220,
+            "dependency_resolution_ns": 290,
+            "graph_transaction": {
+              "commit_ns": 1891,
+              "object_validation_ns": 660,
+              "residual_ns": 0,
+              "structural_validation_ns": 240,
+              "total_ns": 2791
+            },
+            "graph_transaction_ns": 2921,
+            "object_identity_ns": 2650,
+            "payload_hash_ns": 2820,
+            "projection_commit_ns": 120,
+            "residual_ns": 530,
+            "total_ns": 9551
+          },
+          "graph_publish_call_ns": 9931,
+          "identity_assignment_ns": 90,
+          "resident_map_commit_ns": 510,
+          "residual_ns": 360,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 10981
+        },
+        "state_release_completed_ns": 2009507714157329,
+        "state_release_residual_ns": 50,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 140,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 290
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507714387143,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507714307502,
+        "batch_id": 32,
+        "cohort_resolution_ns": 30,
+        "completion_stage_ns": 2581,
+        "cpp_executor_finished_monotonic_ns": 2009507743315004,
+        "executor_finished_ns": 2009507743408025,
+        "executor_started_ns": 2009507714309842,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 15550,
+        "request_commit_residual_ns": 3560,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507743407995,
+        "scheduler_requeue_ns": 460,
+        "state_graph_publication_completed_monotonic_ns": 2009507743422746,
+        "state_graph_publication_ns": 11530,
+        "state_graph_publication_started_monotonic_ns": 2009507743411216,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 60,
+          "graph_publish": {
+            "batch_validation_ns": 270,
+            "dependency_resolution_ns": 270,
+            "graph_transaction": {
+              "commit_ns": 2220,
+              "object_validation_ns": 750,
+              "residual_ns": 0,
+              "structural_validation_ns": 240,
+              "total_ns": 3210
+            },
+            "graph_transaction_ns": 3340,
+            "object_identity_ns": 2670,
+            "payload_hash_ns": 2840,
+            "projection_commit_ns": 140,
+            "residual_ns": 520,
+            "total_ns": 10050
+          },
+          "graph_publish_call_ns": 10460,
+          "identity_assignment_ns": 90,
+          "resident_map_commit_ns": 510,
+          "residual_ns": 370,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 11530
+        },
+        "state_release_completed_ns": 2009507743426456,
+        "state_release_residual_ns": 60,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 100,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 210
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507743690281,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507743597919,
+        "batch_id": 33,
+        "cohort_resolution_ns": 50,
+        "completion_stage_ns": 3540,
+        "cpp_executor_finished_monotonic_ns": 2009507772642522,
+        "executor_finished_ns": 2009507772738504,
+        "executor_started_ns": 2009507743602939,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 16090,
+        "request_commit_residual_ns": 4260,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507772738474,
+        "scheduler_requeue_ns": 450,
+        "state_graph_publication_completed_monotonic_ns": 2009507772754084,
+        "state_graph_publication_ns": 11380,
+        "state_graph_publication_started_monotonic_ns": 2009507772742704,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 60,
+          "graph_publish": {
+            "batch_validation_ns": 240,
+            "dependency_resolution_ns": 250,
+            "graph_transaction": {
+              "commit_ns": 1960,
+              "object_validation_ns": 760,
+              "residual_ns": 0,
+              "structural_validation_ns": 190,
+              "total_ns": 2910
+            },
+            "graph_transaction_ns": 3040,
+            "object_identity_ns": 2640,
+            "payload_hash_ns": 2910,
+            "projection_commit_ns": 110,
+            "residual_ns": 580,
+            "total_ns": 9770
+          },
+          "graph_publish_call_ns": 10230,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 560,
+          "residual_ns": 390,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 11380
+        },
+        "state_release_completed_ns": 2009507772758494,
+        "state_release_residual_ns": 50,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 160,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 260
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507773013940,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507772926048,
+        "batch_id": 34,
+        "cohort_resolution_ns": 40,
+        "completion_stage_ns": 2400,
+        "cpp_executor_finished_monotonic_ns": 2009507802033172,
+        "executor_finished_ns": 2009507802143774,
+        "executor_started_ns": 2009507772929058,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 15470,
+        "request_commit_residual_ns": 3660,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507802143744,
+        "scheduler_requeue_ns": 450,
+        "state_graph_publication_completed_monotonic_ns": 2009507802158164,
+        "state_graph_publication_ns": 11360,
+        "state_graph_publication_started_monotonic_ns": 2009507802146804,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 250,
+            "dependency_resolution_ns": 250,
+            "graph_transaction": {
+              "commit_ns": 1960,
+              "object_validation_ns": 720,
+              "residual_ns": 0,
+              "structural_validation_ns": 240,
+              "total_ns": 2920
+            },
+            "graph_transaction_ns": 3060,
+            "object_identity_ns": 2750,
+            "payload_hash_ns": 2900,
+            "projection_commit_ns": 140,
+            "residual_ns": 540,
+            "total_ns": 9890
+          },
+          "graph_publish_call_ns": 10280,
+          "identity_assignment_ns": 90,
+          "resident_map_commit_ns": 540,
+          "residual_ns": 350,
+          "state_reference_prepare_ns": 50,
+          "total_ns": 11360
+        },
+        "state_release_completed_ns": 2009507802161994,
+        "state_release_residual_ns": 70,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 160,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 240
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507802399069,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507802310467,
+        "batch_id": 35,
+        "cohort_resolution_ns": 40,
+        "completion_stage_ns": 2760,
+        "cpp_executor_finished_monotonic_ns": 2009507831465012,
+        "executor_finished_ns": 2009507831585395,
+        "executor_started_ns": 2009507802312897,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 17170,
+        "request_commit_residual_ns": 4110,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507831585365,
+        "scheduler_requeue_ns": 460,
+        "state_graph_publication_completed_monotonic_ns": 2009507831601485,
+        "state_graph_publication_ns": 12600,
+        "state_graph_publication_started_monotonic_ns": 2009507831588885,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 300,
+            "dependency_resolution_ns": 370,
+            "graph_transaction": {
+              "commit_ns": 2160,
+              "object_validation_ns": 660,
+              "residual_ns": 0,
+              "structural_validation_ns": 290,
+              "total_ns": 3110
+            },
+            "graph_transaction_ns": 3260,
+            "object_identity_ns": 2960,
+            "payload_hash_ns": 3180,
+            "projection_commit_ns": 110,
+            "residual_ns": 690,
+            "total_ns": 10870
+          },
+          "graph_publish_call_ns": 11330,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 630,
+          "residual_ns": 450,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 12600
+        },
+        "state_release_completed_ns": 2009507831605665,
+        "state_release_residual_ns": 70,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 130,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 230
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507831841400,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507831761888,
+        "batch_id": 36,
+        "cohort_resolution_ns": 50,
+        "completion_stage_ns": 2300,
+        "cpp_executor_finished_monotonic_ns": 2009507860775730,
+        "executor_finished_ns": 2009507860866602,
+        "executor_started_ns": 2009507831764438,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 15591,
+        "request_commit_residual_ns": 3660,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507860866572,
+        "scheduler_requeue_ns": 410,
+        "state_graph_publication_completed_monotonic_ns": 2009507860881023,
+        "state_graph_publication_ns": 11521,
+        "state_graph_publication_started_monotonic_ns": 2009507860869502,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 60,
+          "graph_publish": {
+            "batch_validation_ns": 260,
+            "dependency_resolution_ns": 300,
+            "graph_transaction": {
+              "commit_ns": 1940,
+              "object_validation_ns": 610,
+              "residual_ns": 0,
+              "structural_validation_ns": 250,
+              "total_ns": 2800
+            },
+            "graph_transaction_ns": 2930,
+            "object_identity_ns": 2660,
+            "payload_hash_ns": 3300,
+            "projection_commit_ns": 110,
+            "residual_ns": 520,
+            "total_ns": 10080
+          },
+          "graph_publish_call_ns": 10480,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 451,
+          "residual_ns": 390,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 11521
+        },
+        "state_release_completed_ns": 2009507860884823,
+        "state_release_residual_ns": 50,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 150,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 230
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507861109267,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507861027295,
+        "batch_id": 37,
+        "cohort_resolution_ns": 50,
+        "completion_stage_ns": 2190,
+        "cpp_executor_finished_monotonic_ns": 2009507890056798,
+        "executor_finished_ns": 2009507890177800,
+        "executor_started_ns": 2009507861029916,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 15171,
+        "request_commit_residual_ns": 3570,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507890177760,
+        "scheduler_requeue_ns": 410,
+        "state_graph_publication_completed_monotonic_ns": 2009507890191821,
+        "state_graph_publication_ns": 11191,
+        "state_graph_publication_started_monotonic_ns": 2009507890180630,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 290,
+            "dependency_resolution_ns": 310,
+            "graph_transaction": {
+              "commit_ns": 1840,
+              "object_validation_ns": 680,
+              "residual_ns": 0,
+              "structural_validation_ns": 250,
+              "total_ns": 2770
+            },
+            "graph_transaction_ns": 2900,
+            "object_identity_ns": 2651,
+            "payload_hash_ns": 2940,
+            "projection_commit_ns": 110,
+            "residual_ns": 520,
+            "total_ns": 9721
+          },
+          "graph_publish_call_ns": 10111,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 500,
+          "residual_ns": 390,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 11191
+        },
+        "state_release_completed_ns": 2009507890195521,
+        "state_release_residual_ns": 50,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 160,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 260
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507890429955,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507890337774,
+        "batch_id": 38,
+        "cohort_resolution_ns": 50,
+        "completion_stage_ns": 2210,
+        "cpp_executor_finished_monotonic_ns": 2009507919434417,
+        "executor_finished_ns": 2009507919524939,
+        "executor_started_ns": 2009507890340274,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 15391,
+        "request_commit_residual_ns": 3671,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507919524909,
+        "scheduler_requeue_ns": 460,
+        "state_graph_publication_completed_monotonic_ns": 2009507919539059,
+        "state_graph_publication_ns": 11260,
+        "state_graph_publication_started_monotonic_ns": 2009507919527799,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 260,
+            "dependency_resolution_ns": 300,
+            "graph_transaction": {
+              "commit_ns": 1990,
+              "object_validation_ns": 680,
+              "residual_ns": 0,
+              "structural_validation_ns": 250,
+              "total_ns": 2920
+            },
+            "graph_transaction_ns": 3060,
+            "object_identity_ns": 2650,
+            "payload_hash_ns": 2870,
+            "projection_commit_ns": 100,
+            "residual_ns": 590,
+            "total_ns": 9830
+          },
+          "graph_publish_call_ns": 10280,
+          "identity_assignment_ns": 80,
+          "resident_map_commit_ns": 470,
+          "residual_ns": 340,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 11260
+        },
+        "state_release_completed_ns": 2009507919542890,
+        "state_release_residual_ns": 50,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 150,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 250
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507919774374,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507919690493,
+        "batch_id": 39,
+        "cohort_resolution_ns": 110,
+        "completion_stage_ns": 5060,
+        "cpp_executor_finished_monotonic_ns": 2009507948780616,
+        "executor_finished_ns": 2009507948876998,
+        "executor_started_ns": 2009507919693153,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 21821,
+        "request_commit_residual_ns": 5170,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507948876968,
+        "scheduler_requeue_ns": 800,
+        "state_graph_publication_completed_monotonic_ns": 2009507948899119,
+        "state_graph_publication_ns": 15851,
+        "state_graph_publication_started_monotonic_ns": 2009507948883268,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 110,
+          "graph_publish": {
+            "batch_validation_ns": 440,
+            "dependency_resolution_ns": 490,
+            "graph_transaction": {
+              "commit_ns": 3050,
+              "object_validation_ns": 1100,
+              "residual_ns": 0,
+              "structural_validation_ns": 380,
+              "total_ns": 4530
+            },
+            "graph_transaction_ns": 4660,
+            "object_identity_ns": 3090,
+            "payload_hash_ns": 3820,
+            "projection_commit_ns": 140,
+            "residual_ns": 880,
+            "total_ns": 13520
+          },
+          "graph_publish_call_ns": 14470,
+          "identity_assignment_ns": 110,
+          "resident_map_commit_ns": 561,
+          "residual_ns": 540,
+          "state_reference_prepare_ns": 60,
+          "total_ns": 15851
+        },
+        "state_release_completed_ns": 2009507948904679,
+        "state_release_residual_ns": 180,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 130,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 510
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507949142483,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507949058612,
+        "batch_id": 40,
+        "cohort_resolution_ns": 40,
+        "completion_stage_ns": 3060,
+        "cpp_executor_finished_monotonic_ns": 2009507978126865,
+        "executor_finished_ns": 2009507978209177,
+        "executor_started_ns": 2009507949061822,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 19030,
+        "request_commit_residual_ns": 4330,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009507978209147,
+        "scheduler_requeue_ns": 600,
+        "state_graph_publication_completed_monotonic_ns": 2009507978227127,
+        "state_graph_publication_ns": 14100,
+        "state_graph_publication_started_monotonic_ns": 2009507978213027,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 310,
+            "dependency_resolution_ns": 330,
+            "graph_transaction": {
+              "commit_ns": 2620,
+              "object_validation_ns": 920,
+              "residual_ns": 0,
+              "structural_validation_ns": 280,
+              "total_ns": 3820
+            },
+            "graph_transaction_ns": 3950,
+            "object_identity_ns": 3030,
+            "payload_hash_ns": 3590,
+            "projection_commit_ns": 220,
+            "residual_ns": 730,
+            "total_ns": 12160
+          },
+          "graph_publish_call_ns": 12790,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 670,
+          "residual_ns": 440,
+          "state_reference_prepare_ns": 50,
+          "total_ns": 14100
+        },
+        "state_release_completed_ns": 2009507978231667,
+        "state_release_residual_ns": 90,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 180,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 270
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009507978456762,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009507978373790,
+        "batch_id": 41,
+        "cohort_resolution_ns": 50,
+        "completion_stage_ns": 2550,
+        "cpp_executor_finished_monotonic_ns": 2009508007408932,
+        "executor_finished_ns": 2009508007502204,
+        "executor_started_ns": 2009507978376510,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 17241,
+        "request_commit_residual_ns": 3880,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009508007502154,
+        "scheduler_requeue_ns": 530,
+        "state_graph_publication_completed_monotonic_ns": 2009508007518255,
+        "state_graph_publication_ns": 12831,
+        "state_graph_publication_started_monotonic_ns": 2009508007505424,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 290,
+            "dependency_resolution_ns": 310,
+            "graph_transaction": {
+              "commit_ns": 2400,
+              "object_validation_ns": 790,
+              "residual_ns": 0,
+              "structural_validation_ns": 320,
+              "total_ns": 3510
+            },
+            "graph_transaction_ns": 3640,
+            "object_identity_ns": 2751,
+            "payload_hash_ns": 3440,
+            "projection_commit_ns": 110,
+            "residual_ns": 640,
+            "total_ns": 11181
+          },
+          "graph_publish_call_ns": 11611,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 590,
+          "residual_ns": 430,
+          "state_reference_prepare_ns": 50,
+          "total_ns": 12831
+        },
+        "state_release_completed_ns": 2009508007522355,
+        "state_release_residual_ns": 90,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 160,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 220
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009508007749799,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009508007668698,
+        "batch_id": 42,
+        "cohort_resolution_ns": 40,
+        "completion_stage_ns": 2390,
+        "cpp_executor_finished_monotonic_ns": 2009508036710330,
+        "executor_finished_ns": 2009508036799362,
+        "executor_started_ns": 2009508007671238,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 16201,
+        "request_commit_residual_ns": 3811,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009508036799332,
+        "scheduler_requeue_ns": 470,
+        "state_graph_publication_completed_monotonic_ns": 2009508036814362,
+        "state_graph_publication_ns": 11920,
+        "state_graph_publication_started_monotonic_ns": 2009508036802442,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 60,
+          "graph_publish": {
+            "batch_validation_ns": 320,
+            "dependency_resolution_ns": 360,
+            "graph_transaction": {
+              "commit_ns": 2070,
+              "object_validation_ns": 720,
+              "residual_ns": 0,
+              "structural_validation_ns": 260,
+              "total_ns": 3050
+            },
+            "graph_transaction_ns": 3230,
+            "object_identity_ns": 2700,
+            "payload_hash_ns": 3130,
+            "projection_commit_ns": 110,
+            "residual_ns": 560,
+            "total_ns": 10410
+          },
+          "graph_publish_call_ns": 10850,
+          "identity_assignment_ns": 80,
+          "resident_map_commit_ns": 520,
+          "residual_ns": 360,
+          "state_reference_prepare_ns": 50,
+          "total_ns": 11920
+        },
+        "state_release_completed_ns": 2009508036818333,
+        "state_release_residual_ns": 60,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 160,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 280
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009508037046437,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009508036966096,
+        "batch_id": 43,
+        "cohort_resolution_ns": 220,
+        "completion_stage_ns": 3460,
+        "cpp_executor_finished_monotonic_ns": 2009508065948997,
+        "executor_finished_ns": 2009508066054659,
+        "executor_started_ns": 2009508036968486,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 19641,
+        "request_commit_residual_ns": 4751,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009508066054619,
+        "scheduler_requeue_ns": 740,
+        "state_graph_publication_completed_monotonic_ns": 2009508066073379,
+        "state_graph_publication_ns": 14150,
+        "state_graph_publication_started_monotonic_ns": 2009508066059229,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 790,
+            "dependency_resolution_ns": 330,
+            "graph_transaction": {
+              "commit_ns": 2550,
+              "object_validation_ns": 770,
+              "residual_ns": 0,
+              "structural_validation_ns": 270,
+              "total_ns": 3590
+            },
+            "graph_transaction_ns": 3740,
+            "object_identity_ns": 2690,
+            "payload_hash_ns": 4010,
+            "projection_commit_ns": 130,
+            "residual_ns": 530,
+            "total_ns": 12220
+          },
+          "graph_publish_call_ns": 12900,
+          "identity_assignment_ns": 100,
+          "resident_map_commit_ns": 580,
+          "residual_ns": 450,
+          "state_reference_prepare_ns": 70,
+          "total_ns": 14150
+        },
+        "state_release_completed_ns": 2009508066078290,
+        "state_release_residual_ns": 60,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 160,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 250
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009508066313134,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009508066230913,
+        "batch_id": 44,
+        "cohort_resolution_ns": 50,
+        "completion_stage_ns": 2270,
+        "cpp_executor_finished_monotonic_ns": 2009508095290396,
+        "executor_finished_ns": 2009508095395088,
+        "executor_started_ns": 2009508066233393,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 15990,
+        "request_commit_residual_ns": 3850,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009508095395048,
+        "scheduler_requeue_ns": 510,
+        "state_graph_publication_completed_monotonic_ns": 2009508095409688,
+        "state_graph_publication_ns": 11630,
+        "state_graph_publication_started_monotonic_ns": 2009508095398058,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 60,
+          "graph_publish": {
+            "batch_validation_ns": 330,
+            "dependency_resolution_ns": 250,
+            "graph_transaction": {
+              "commit_ns": 1910,
+              "object_validation_ns": 720,
+              "residual_ns": 0,
+              "structural_validation_ns": 260,
+              "total_ns": 2890
+            },
+            "graph_transaction_ns": 3020,
+            "object_identity_ns": 2660,
+            "payload_hash_ns": 3130,
+            "projection_commit_ns": 110,
+            "residual_ns": 550,
+            "total_ns": 10050
+          },
+          "graph_publish_call_ns": 10540,
+          "identity_assignment_ns": 90,
+          "resident_map_commit_ns": 490,
+          "residual_ns": 400,
+          "state_reference_prepare_ns": 50,
+          "total_ns": 11630
+        },
+        "state_release_completed_ns": 2009508095413718,
+        "state_release_residual_ns": 80,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 170,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 240
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009508095650233,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009508095567471,
+        "batch_id": 45,
+        "cohort_resolution_ns": 490,
+        "completion_stage_ns": 11870,
+        "cpp_executor_finished_monotonic_ns": 2009508124602994,
+        "executor_finished_ns": 2009508124712196,
+        "executor_started_ns": 2009508095569851,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 46511,
+        "request_commit_residual_ns": 10560,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009508124712166,
+        "scheduler_requeue_ns": 1990,
+        "state_graph_publication_completed_monotonic_ns": 2009508124762727,
+        "state_graph_publication_ns": 33961,
+        "state_graph_publication_started_monotonic_ns": 2009508124728766,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 300,
+          "graph_publish": {
+            "batch_validation_ns": 1220,
+            "dependency_resolution_ns": 690,
+            "graph_transaction": {
+              "commit_ns": 4900,
+              "object_validation_ns": 1810,
+              "residual_ns": 0,
+              "structural_validation_ns": 700,
+              "total_ns": 7410
+            },
+            "graph_transaction_ns": 7540,
+            "object_identity_ns": 6120,
+            "payload_hash_ns": 10291,
+            "projection_commit_ns": 1040,
+            "residual_ns": 1760,
+            "total_ns": 28661
+          },
+          "graph_publish_call_ns": 30181,
+          "identity_assignment_ns": 340,
+          "resident_map_commit_ns": 1360,
+          "residual_ns": 1740,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 33961
+        },
+        "state_release_completed_ns": 2009508124772327,
+        "state_release_residual_ns": 350,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 360,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 910
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009508125049023,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009508124957431,
+        "batch_id": 46,
+        "cohort_resolution_ns": 250,
+        "completion_stage_ns": 7410,
+        "cpp_executor_finished_monotonic_ns": 2009508153957903,
+        "executor_finished_ns": 2009508154050625,
+        "executor_started_ns": 2009508124963331,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 29060,
+        "request_commit_residual_ns": 6470,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009508154050595,
+        "scheduler_requeue_ns": 1170,
+        "state_graph_publication_completed_monotonic_ns": 2009508154081235,
+        "state_graph_publication_ns": 21420,
+        "state_graph_publication_started_monotonic_ns": 2009508154059815,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 60,
+          "graph_publish": {
+            "batch_validation_ns": 240,
+            "dependency_resolution_ns": 430,
+            "graph_transaction": {
+              "commit_ns": 4450,
+              "object_validation_ns": 1670,
+              "residual_ns": 0,
+              "structural_validation_ns": 520,
+              "total_ns": 6640
+            },
+            "graph_transaction_ns": 6830,
+            "object_identity_ns": 3350,
+            "payload_hash_ns": 5600,
+            "projection_commit_ns": 320,
+            "residual_ns": 1230,
+            "total_ns": 18000
+          },
+          "graph_publish_call_ns": 19230,
+          "identity_assignment_ns": 330,
+          "resident_map_commit_ns": 980,
+          "residual_ns": 780,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 21420
+        },
+        "state_release_completed_ns": 2009508154088515,
+        "state_release_residual_ns": 310,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 400,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 860
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009508154345521,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009508154256849,
+        "batch_id": 47,
+        "cohort_resolution_ns": 40,
+        "completion_stage_ns": 2570,
+        "cpp_executor_finished_monotonic_ns": 2009508183353423,
+        "executor_finished_ns": 2009508183451825,
+        "executor_started_ns": 2009508154263039,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 16940,
+        "request_commit_residual_ns": 4270,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009508183451795,
+        "scheduler_requeue_ns": 380,
+        "state_graph_publication_completed_monotonic_ns": 2009508183467365,
+        "state_graph_publication_ns": 12290,
+        "state_graph_publication_started_monotonic_ns": 2009508183455075,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 50,
+          "graph_publish": {
+            "batch_validation_ns": 260,
+            "dependency_resolution_ns": 290,
+            "graph_transaction": {
+              "commit_ns": 2270,
+              "object_validation_ns": 620,
+              "residual_ns": 0,
+              "structural_validation_ns": 250,
+              "total_ns": 3140
+            },
+            "graph_transaction_ns": 3260,
+            "object_identity_ns": 2550,
+            "payload_hash_ns": 3490,
+            "projection_commit_ns": 100,
+            "residual_ns": 560,
+            "total_ns": 10510
+          },
+          "graph_publish_call_ns": 11070,
+          "identity_assignment_ns": 330,
+          "resident_map_commit_ns": 430,
+          "residual_ns": 370,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 12290
+        },
+        "state_release_completed_ns": 2009508183471675,
+        "state_release_residual_ns": 60,
+        "terminal_publication_prepare_ns": 0,
+        "timing_record_ns": 190,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 17,
+        "worker_metrics_ns": 240
+      },
+      {
+        "active_requests_before_enqueue": 5,
+        "ascend_submission_started_monotonic_ns": 2009508183710620,
+        "available_state_slots": 0,
+        "batch_enqueued_ns": 2009508183624158,
+        "batch_id": 48,
+        "cohort_resolution_ns": 50,
+        "completion_stage_ns": 2520,
+        "cpp_executor_finished_monotonic_ns": 2009508212683001,
+        "executor_finished_ns": 2009508212773893,
+        "executor_started_ns": 2009508183626578,
+        "phase": "decode_ready",
+        "queue_depth_before_enqueue": 5,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 183534,
+        "request_commit_residual_ns": 1500,
+        "request_ids": [
+          "57900"
+        ],
+        "rust_completion_received_monotonic_ns": 2009508212773863,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009508212788723,
+        "state_graph_publication_ns": 11590,
+        "state_graph_publication_started_monotonic_ns": 2009508212777133,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 60,
+          "graph_publish": {
+            "batch_validation_ns": 530,
+            "dependency_resolution_ns": 290,
+            "graph_transaction": {
+              "commit_ns": 1940,
+              "object_validation_ns": 660,
+              "residual_ns": 0,
+              "structural_validation_ns": 210,
+              "total_ns": 2810
+            },
+            "graph_transaction_ns": 2950,
+            "object_identity_ns": 2630,
+            "payload_hash_ns": 3060,
+            "projection_commit_ns": 120,
+            "residual_ns": 550,
+            "total_ns": 10130
+          },
+          "graph_publish_call_ns": 10570,
+          "identity_assignment_ns": 90,
+          "resident_map_commit_ns": 480,
+          "residual_ns": 350,
+          "state_reference_prepare_ns": 40,
+          "total_ns": 11590
+        },
+        "state_release_completed_ns": 2009508212960377,
+        "state_release_residual_ns": 80,
+        "terminal_publication_prepare_ns": 170444,
+        "timing_record_ns": 140,
+        "total_new_state_slots": 0,
+        "tracked_active_states": 17,
+        "tracked_active_states_after_completion": 16,
+        "worker_metrics_ns": 300
+      },
+      {
+        "active_requests_before_enqueue": 4,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 1,
+        "batch_enqueued_ns": 2009508213145030,
+        "batch_id": 49,
+        "cohort_resolution_ns": 30,
+        "completion_stage_ns": 12040,
+        "cpp_executor_finished_monotonic_ns": 2009508479539606,
+        "executor_finished_ns": 2009508479675929,
+        "executor_started_ns": 2009508213149010,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 4,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 239345,
+        "request_commit_residual_ns": 4020,
+        "request_ids": [
+          "58000"
+        ],
+        "rust_completion_received_monotonic_ns": 2009508479675879,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009508479713660,
+        "state_graph_publication_ns": 22911,
+        "state_graph_publication_started_monotonic_ns": 2009508479690749,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 140,
+          "graph_publish": {
+            "batch_validation_ns": 650,
+            "dependency_resolution_ns": 750,
+            "graph_transaction": {
+              "commit_ns": 2590,
+              "object_validation_ns": 1410,
+              "residual_ns": 0,
+              "structural_validation_ns": 870,
+              "total_ns": 4870
+            },
+            "graph_transaction_ns": 5420,
+            "object_identity_ns": 4130,
+            "payload_hash_ns": 5860,
+            "projection_commit_ns": 230,
+            "residual_ns": 2230,
+            "total_ns": 19270
+          },
+          "graph_publish_call_ns": 20850,
+          "identity_assignment_ns": 50,
+          "resident_map_commit_ns": 881,
+          "residual_ns": 940,
+          "state_reference_prepare_ns": 50,
+          "total_ns": 22911
+        },
+        "state_release_completed_ns": 2009508479929084,
+        "state_release_residual_ns": 160,
+        "terminal_publication_prepare_ns": 212414,
+        "timing_record_ns": 190,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 16,
+        "tracked_active_states_after_completion": 16,
+        "worker_metrics_ns": 1580
+      },
+      {
+        "active_requests_before_enqueue": 3,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 1,
+        "batch_enqueued_ns": 2009508480128418,
+        "batch_id": 50,
+        "cohort_resolution_ns": 150,
+        "completion_stage_ns": 8580,
+        "cpp_executor_finished_monotonic_ns": 2009508746410961,
+        "executor_finished_ns": 2009508746545764,
+        "executor_started_ns": 2009508480133498,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 3,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 226155,
+        "request_commit_residual_ns": 2500,
+        "request_ids": [
+          "58001"
+        ],
+        "rust_completion_received_monotonic_ns": 2009508746545734,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009508746575485,
+        "state_graph_publication_ns": 19441,
+        "state_graph_publication_started_monotonic_ns": 2009508746556044,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 170,
+          "graph_publish": {
+            "batch_validation_ns": 760,
+            "dependency_resolution_ns": 570,
+            "graph_transaction": {
+              "commit_ns": 2081,
+              "object_validation_ns": 860,
+              "residual_ns": 0,
+              "structural_validation_ns": 960,
+              "total_ns": 3901
+            },
+            "graph_transaction_ns": 4381,
+            "object_identity_ns": 3570,
+            "payload_hash_ns": 5530,
+            "projection_commit_ns": 260,
+            "residual_ns": 1620,
+            "total_ns": 16691
+          },
+          "graph_publish_call_ns": 17781,
+          "identity_assignment_ns": 120,
+          "resident_map_commit_ns": 650,
+          "residual_ns": 670,
+          "state_reference_prepare_ns": 50,
+          "total_ns": 19441
+        },
+        "state_release_completed_ns": 2009508746781929,
+        "state_release_residual_ns": 190,
+        "terminal_publication_prepare_ns": 204214,
+        "timing_record_ns": 190,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 16,
+        "tracked_active_states_after_completion": 16,
+        "worker_metrics_ns": 1090
+      },
+      {
+        "active_requests_before_enqueue": 2,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 1,
+        "batch_enqueued_ns": 2009508746944772,
+        "batch_id": 51,
+        "cohort_resolution_ns": 140,
+        "completion_stage_ns": 8610,
+        "cpp_executor_finished_monotonic_ns": 2009509013317647,
+        "executor_finished_ns": 2009509013485681,
+        "executor_started_ns": 2009508746949402,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 2,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 239155,
+        "request_commit_residual_ns": 2630,
+        "request_ids": [
+          "58002"
+        ],
+        "rust_completion_received_monotonic_ns": 2009509013485651,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009509013514641,
+        "state_graph_publication_ns": 18380,
+        "state_graph_publication_started_monotonic_ns": 2009509013496261,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 190,
+          "graph_publish": {
+            "batch_validation_ns": 580,
+            "dependency_resolution_ns": 520,
+            "graph_transaction": {
+              "commit_ns": 1890,
+              "object_validation_ns": 800,
+              "residual_ns": 0,
+              "structural_validation_ns": 630,
+              "total_ns": 3320
+            },
+            "graph_transaction_ns": 3790,
+            "object_identity_ns": 3590,
+            "payload_hash_ns": 5480,
+            "projection_commit_ns": 250,
+            "residual_ns": 1460,
+            "total_ns": 15670
+          },
+          "graph_publish_call_ns": 16730,
+          "identity_assignment_ns": 120,
+          "resident_map_commit_ns": 670,
+          "residual_ns": 620,
+          "state_reference_prepare_ns": 50,
+          "total_ns": 18380
+        },
+        "state_release_completed_ns": 2009509013734926,
+        "state_release_residual_ns": 190,
+        "terminal_publication_prepare_ns": 218145,
+        "timing_record_ns": 190,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 16,
+        "tracked_active_states_after_completion": 16,
+        "worker_metrics_ns": 1150
+      },
+      {
+        "active_requests_before_enqueue": 1,
+        "ascend_submission_started_monotonic_ns": 0,
+        "available_state_slots": 1,
+        "batch_enqueued_ns": 2009509013906509,
+        "batch_id": 52,
+        "cohort_resolution_ns": 320,
+        "completion_stage_ns": 20570,
+        "cpp_executor_finished_monotonic_ns": 2009509280185732,
+        "executor_finished_ns": 2009509280342836,
+        "executor_started_ns": 2009509013911049,
+        "phase": "prefill_ready",
+        "queue_depth_before_enqueue": 1,
+        "remaining_state_slots": 0,
+        "request_commit_ns": 306066,
+        "request_commit_residual_ns": 7240,
+        "request_ids": [
+          "58003"
+        ],
+        "rust_completion_received_monotonic_ns": 2009509280342806,
+        "scheduler_requeue_ns": 0,
+        "state_graph_publication_completed_monotonic_ns": 2009509280410397,
+        "state_graph_publication_ns": 41991,
+        "state_graph_publication_started_monotonic_ns": 2009509280368406,
+        "state_publication_breakdown": {
+          "graph_mutex_wait_ns": 250,
+          "graph_publish": {
+            "batch_validation_ns": 1450,
+            "dependency_resolution_ns": 730,
+            "graph_transaction": {
+              "commit_ns": 4100,
+              "object_validation_ns": 1760,
+              "residual_ns": 0,
+              "structural_validation_ns": 1790,
+              "total_ns": 7650
+            },
+            "graph_transaction_ns": 8570,
+            "object_identity_ns": 6101,
+            "payload_hash_ns": 13360,
+            "projection_commit_ns": 1050,
+            "residual_ns": 3480,
+            "total_ns": 34741
+          },
+          "graph_publish_call_ns": 36991,
+          "identity_assignment_ns": 350,
+          "resident_map_commit_ns": 2000,
+          "residual_ns": 2320,
+          "state_reference_prepare_ns": 80,
+          "total_ns": 41991
+        },
+        "state_release_completed_ns": 2009509280673122,
+        "state_release_residual_ns": 560,
+        "terminal_publication_prepare_ns": 256835,
+        "timing_record_ns": 410,
+        "total_new_state_slots": 1,
+        "tracked_active_states": 16,
+        "tracked_active_states_after_completion": 16,
+        "worker_metrics_ns": 2770
+      }
+    ],
+    "recent_host_tier_operations": [],
+    "recent_preemptions": [],
+    "recent_program_decisions": [],
+    "recent_session_pressure_evictions": [],
+    "recomputed_tokens": 0,
+    "retained_decision_hits": 0,
+    "session_authority_applied": 0,
+    "session_authority_fallbacks": 0,
+    "session_authority_requests": 0,
+    "session_lifecycle_enabled": false,
+    "session_pressure_evicted_tokens": 0,
+    "session_pressure_eviction_applied": 0,
+    "session_pressure_eviction_fallbacks": 0,
+    "session_pressure_eviction_policy": "disabled",
+    "session_pressure_eviction_requests": 0,
+    "session_pressure_protected_evictions": 0,
+    "session_pressure_unprotected_evictions": 0,
+    "state_feedback": null,
+    "state_feedback_mode": "off",
+    "state_graph": {
+      "continuation_nodes": 16,
+      "execution_identity_sha256": "6ebeb5e5355bc121720de5ef84e9f8ff30d1ab265922bebbc28612b556da4611",
+      "placement_identity_sha256": "b81e6fd5056e68dcd408e7e3c35b6ea06f8af53be866586e99b8aabebbce31db",
+      "root_nodes": 3,
+      "schema": "native-runtime-state-graph-snapshot-v1",
+      "state_publication_policy": "state-id-indexed-atomic-framed-binary-prepared-v2",
+      "total_nodes": 19,
+      "workflow_identity_sha256": "a819eef15a7ca761e622f1713454cd534968b3c2bcf3d1f032bd499001719dee"
+    },
+    "state_graph_publication_items": 52,
+    "state_graph_publication_transactions": 52,
+    "submitted_requests": 21,
+    "timing_clock_domain": "linux-clock-monotonic-ns-v1",
+    "timing_telemetry_schema": "native-capacity-wave-timing-v5",
+    "worker_completed_append_prefill_batch_size_histogram": {},
+    "worker_completed_append_prefill_batches": 0,
+    "worker_completed_append_prefill_requests": 0,
+    "worker_completed_append_prefill_row_count_histogram": {},
+    "worker_completed_append_prefill_rows": 0,
+    "worker_completed_batch_requests": 52,
+    "worker_completed_batches": 52,
+    "worker_completed_decode_batch_size_histogram": {
+      "1": 31
+    },
+    "worker_completed_decode_batches": 31,
+    "worker_completed_decode_requests": 31,
+    "worker_completed_prefill_batches": 21,
+    "worker_completed_prefill_requests": 21,
+    "worker_completed_prefill_rows": 45717
+  },
+  "metrics_before": {
+    "admission_stats_cache_hits": 0,
+    "admission_stats_refreshes": 1,
+    "arrivals_while_executor_inflight": 0,
+    "automatic_prefix_cache_enabled": false,
+    "automatic_prefix_cache_entries": 0,
+    "automatic_prefix_cache_evictions": 0,
+    "automatic_prefix_cache_hash_collisions": 0,
+    "automatic_prefix_cache_hits": 0,
+    "automatic_prefix_cache_inserts": 0,
+    "automatic_prefix_cache_lease_blocked_inserts": 0,
+    "automatic_prefix_cache_lookups": 0,
+    "automatic_prefix_cache_max_entries": 4,
+    "automatic_prefix_cache_reused_tokens": 0,
+    "automatic_prefix_cache_stale_entries": 0,
+    "backend_inflight_requests": 0,
+    "backend_max_inflight_observed": 1,
+    "batches_with_inflight_arrivals": 0,
+    "cancelled_requests": 0,
+    "completed_requests": 0,
+    "decode_batches": 0,
+    "dropped_batch_timings": 0,
+    "dual_microbatch_enabled": false,
+    "dynamic_batching_early_releases": 0,
+    "dynamic_batching_enabled": false,
+    "dynamic_batching_window_expirations": 0,
+    "executed_batches": 0,
+    "forward_authority_enabled": false,
+    "forward_shadow_authority_applied": 0,
+    "forward_shadow_authority_fallbacks": 0,
+    "forward_shadow_enabled": false,
+    "forward_shadow_executor_error": 0,
+    "forward_shadow_mismatch": 0,
+    "forward_shadow_prepare_ns": 0,
+    "forward_shadow_prepared": 0,
+    "forward_shadow_rollback": 0,
+    "forward_shadow_stale": 0,
+    "forward_shadow_validate_ns": 0,
+    "forward_shadow_validated": 0,
+    "host_tier_authority_applied": 0,
+    "host_tier_authority_enabled": false,
+    "host_tier_authority_fallbacks": 0,
+    "host_tier_authority_requests": 0,
+    "host_tier_current_bytes": 0,
+    "host_tier_current_states": 0,
+    "host_tier_deferred_applied": 0,
+    "host_tier_deferred_fallbacks": 0,
+    "host_tier_deferred_pending": 0,
+    "host_tier_deferred_queue_wait_max_ns": 0,
+    "host_tier_deferred_queue_wait_ns": 0,
+    "host_tier_deferred_requests": 0,
+    "host_tier_dropped_operations": 0,
+    "host_tier_prefetch_actor_inflight_ns": 0,
+    "host_tier_prefetch_applied": 0,
+    "host_tier_prefetch_coalesced": 0,
+    "host_tier_prefetch_enabled": false,
+    "host_tier_prefetch_fallbacks": 0,
+    "host_tier_prefetch_pending": 0,
+    "host_tier_prefetch_queue_wait_max_ns": 0,
+    "host_tier_prefetch_queue_wait_ns": 0,
+    "host_tier_prefetch_requests": 0,
+    "host_tier_response_first_enabled": false,
+    "host_tier_restore_hits": 0,
+    "issue19_authority_enabled": false,
+    "issue19_decisions": [],
+    "issue19_telemetry_enabled": false,
+    "max_batch_size_observed": 0,
+    "preemption_applied": 0,
+    "preemption_fallbacks": 0,
+    "preemption_invalidated_generations": 0,
+    "preemption_pressure_opportunities": 0,
+    "preemption_recompute_enabled": false,
+    "preemption_recompute_max_per_request": 1,
+    "preemption_resumes": 0,
+    "prefill_batches": 0,
+    "prefill_chunk_batches": 0,
+    "prefill_chunk_contention_activations": 0,
+    "prefill_chunk_contention_bypasses": 0,
+    "prefill_chunk_items": 0,
+    "program_authority_applied": 0,
+    "program_authority_enabled": false,
+    "program_authority_fallbacks": 0,
+    "program_scheduling_enabled": false,
+    "recent_batch_plans": [],
+    "recent_batch_timing_capacity": 512,
+    "recent_batch_timings": [],
+    "recent_host_tier_operations": [],
+    "recent_preemptions": [],
+    "recent_program_decisions": [],
+    "recent_session_pressure_evictions": [],
+    "recomputed_tokens": 0,
+    "retained_decision_hits": 0,
+    "session_authority_applied": 0,
+    "session_authority_fallbacks": 0,
+    "session_authority_requests": 0,
+    "session_lifecycle_enabled": false,
+    "session_pressure_evicted_tokens": 0,
+    "session_pressure_eviction_applied": 0,
+    "session_pressure_eviction_fallbacks": 0,
+    "session_pressure_eviction_policy": "disabled",
+    "session_pressure_eviction_requests": 0,
+    "session_pressure_protected_evictions": 0,
+    "session_pressure_unprotected_evictions": 0,
+    "state_feedback": null,
+    "state_feedback_mode": "off",
+    "state_graph": {
+      "continuation_nodes": 0,
+      "execution_identity_sha256": "6ebeb5e5355bc121720de5ef84e9f8ff30d1ab265922bebbc28612b556da4611",
+      "placement_identity_sha256": "b81e6fd5056e68dcd408e7e3c35b6ea06f8af53be866586e99b8aabebbce31db",
+      "root_nodes": 3,
+      "schema": "native-runtime-state-graph-snapshot-v1",
+      "state_publication_policy": "state-id-indexed-atomic-framed-binary-prepared-v2",
+      "total_nodes": 3,
+      "workflow_identity_sha256": "a819eef15a7ca761e622f1713454cd534968b3c2bcf3d1f032bd499001719dee"
+    },
+    "state_graph_publication_items": 0,
+    "state_graph_publication_transactions": 0,
+    "submitted_requests": 0,
+    "timing_clock_domain": "linux-clock-monotonic-ns-v1",
+    "timing_telemetry_schema": "native-capacity-wave-timing-v5",
+    "worker_completed_append_prefill_batch_size_histogram": {},
+    "worker_completed_append_prefill_batches": 0,
+    "worker_completed_append_prefill_requests": 0,
+    "worker_completed_append_prefill_row_count_histogram": {},
+    "worker_completed_append_prefill_rows": 0,
+    "worker_completed_batch_requests": 0,
+    "worker_completed_batches": 0,
+    "worker_completed_decode_batch_size_histogram": {},
+    "worker_completed_decode_batches": 0,
+    "worker_completed_decode_requests": 0,
+    "worker_completed_prefill_batches": 0,
+    "worker_completed_prefill_requests": 0,
+    "worker_completed_prefill_rows": 0
+  },
+  "oracle_sha256": "bc3aeb6613f4d2cae6701637bc8e2ee65d48fd428c249d52fd411c190751f191",
+  "performance_claim": false,
+  "preemption_applied": 0,
+  "preemption_fallbacks": 0,
+  "preemption_invalidated_generations": 0,
+  "preemption_resumes": 0,
+  "pressure_requests": 4,
+  "pressure_sojourn_ns": {
+    "max": 1970356124,
+    "p50": 1570082232,
+    "p95": 1930337107
+  },
+  "pressure_ttft_ns": {
+    "max": 1970103829,
+    "p50": 1569873883,
+    "p95": 1930090359
+  },
+  "prompt_manifest_sha256": "04d5b71feb8dd6bc5d1bc6b827d65b9970f787d7b25558905aca0ca5717bc1ed",
+  "prompt_tokens": 2177,
+  "recomputed_tokens": 0,
+  "request_per_s": 1.5467597436230627,
+  "schema_version": 1,
+  "seed_states": 16,
+  "speedup_claim": false,
+  "wall_interval_ns": 3232564088
+}

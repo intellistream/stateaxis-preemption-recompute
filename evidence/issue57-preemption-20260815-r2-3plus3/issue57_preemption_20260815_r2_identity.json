@@ -1,0 +1,141 @@
+{
+  "format": "statecentric-issue57-preemption-identity-v2",
+  "identity_sha256": "c66186228d6da10982eb5b4af604bf9da63fdc30b8d95d0effd153c2f3f9a7b3",
+  "image": {
+    "id": "sha256:f4c89c293e076453e9eef9edb5fb9669740dccbd3c48619a9f976d775fc29b81",
+    "reference": "quay.io/ascend/vllm-ascend:v0.23.0rc1-openeuler"
+  },
+  "implementation_commit": "01db549f",
+  "issue": 57,
+  "records": {
+    "artifact_preparer": {
+      "bytes": 4654,
+      "path": "scripts/prepare_issue57_preemption_20260815_r2.sh",
+      "sha256": "54b377eeaf3602d89dcd98eec983aa84f801c6ceeafc608d77cfa7c4c3ab5e6a"
+    },
+    "compatibility_digest": {
+      "bytes": 357056,
+      "path": ".benchmarks/issue57-preemption-rust-bundle-r1/state_compatibility_digest",
+      "sha256": "d5fb5dd4c090503342ebc7024759016d6bfb59212f19646a523a6f70f43cce93"
+    },
+    "continuation_digest": {
+      "bytes": 320192,
+      "path": ".benchmarks/issue57-preemption-rust-bundle-r1/inference_continuation_schema_digest",
+      "sha256": "591e589ee0c180ac77efb78a6344f6b7966a9aff115c2902abcb4f42352cb36a"
+    },
+    "cpp_producer_closure": {
+      "bytes": 31510,
+      "path": ".benchmarks/issue57-preemption-artifact-20260815-r2/native_cpp_producer_closure.json",
+      "sha256": "d298109ccea4ffdae6f5ea15aaf0de99f11ce63c5a744b8151f68a274ee5130e"
+    },
+    "execution_artifact_identity": {
+      "bytes": 360,
+      "path": ".benchmarks/issue57-preemption-artifact-20260815-r2/execution_artifact_identity.bin",
+      "sha256": "f82b25e00bd40891a870987087ca285dbc6a7d8c42d19d2790b6328b30cac38f"
+    },
+    "execution_config": {
+      "bytes": 256,
+      "path": ".benchmarks/issue57-preemption-artifact-20260815-r2/execution_config.bin",
+      "sha256": "09682f76a33b63dd5312aa7a0f7b43f9b2e1144cbd22c14ba952b9a9907e0815"
+    },
+    "gate_regression": {
+      "bytes": 4566,
+      "path": "benchmarks/test_issue57_preemption_r2_gate.py",
+      "sha256": "6b89d4a10937c6746901c71cfd57ab3091a26ba9860856d9f984267f3959b8eb"
+    },
+    "gate_runner": {
+      "bytes": 15901,
+      "path": "scripts/run_issue57_preemption_20260815_r2_gate.sh",
+      "sha256": "e958133f8221cb249815ad1231d99159b318779e64ad3275bed3012fb10b1e47"
+    },
+    "global_manifest": {
+      "bytes": 1632,
+      "path": "/home/shuhao/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r6/global_pack/global_manifest.json",
+      "sha256": "5922b55ba03d371388d7fc68b4a4e55a152c1ce33917d057f534a83beaee1a4f"
+    },
+    "identity_freezer": {
+      "bytes": 4566,
+      "path": "benchmarks/freeze_issue57_preemption_r2_identity.py",
+      "sha256": "7fa0e7da109ab70a7822299e26a5947d72330845ef4fa1483feacc9e3f919651"
+    },
+    "layers_manifest": {
+      "bytes": 233565,
+      "path": "/home/shuhao/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/worker_layers/all_layers_manifest.json",
+      "sha256": "a1c0e8156dd20fa06fb97b45a3c19a37c330b06d33cdcd9f37277d8f272e0530"
+    },
+    "model_manifest": {
+      "bytes": 168249,
+      "path": "/home/shuhao/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/model_manifest.json",
+      "sha256": "a361693076e1f8e073711796b40269973396ad4b7ed4373a57bf9b6eafdc1912"
+    },
+    "native_launcher": {
+      "bytes": 216711,
+      "path": "scripts/run_native_http_npu_probe.sh",
+      "sha256": "2092cbefcf5b2d8915ae75b57753203682e7d0a5aa6284ee9964c3c780efc1bd"
+    },
+    "native_server": {
+      "bytes": 2874864,
+      "path": ".benchmarks/issue57-preemption-rust-bundle-r1/native_state_engine",
+      "sha256": "6e91ac6d76f4f279332086817e1ca9de0ce94709bfaf3b98bd96e08f0ab788b3"
+    },
+    "native_state_identity": {
+      "bytes": 3002,
+      "path": ".benchmarks/issue57-preemption-artifact-20260815-r2/native_state_identity.json",
+      "sha256": "93d3daf0e0bb7a20f353c486cc23777ca9dfbb79eb7671d0bf3caa73465a6d48"
+    },
+    "native_worker": {
+      "bytes": 802128,
+      "path": "/tmp/statecentric-next-npu/.benchmarks/issue12-program-aware-cpp-build-r1/statecentric_resident_full_model_probe",
+      "sha256": "8a808d09e92d11692b246a7983f2e8e2b2c64696ed2f5d8c44fda5e25838fc3e"
+    },
+    "oracle": {
+      "bytes": 24212,
+      "path": "results/qwen14b-native-exact-hot-v1-oracle-o32.json",
+      "sha256": "bc3aeb6613f4d2cae6701637bc8e2ee65d48fd428c249d52fd411c190751f191"
+    },
+    "pack_digest_cache": {
+      "bytes": 36112,
+      "path": ".benchmarks/issue57-preemption-artifact-20260815-r2/pack_digest_cache.tsv",
+      "sha256": "3cfa499de77b60f739645074f4d6650cedfea80093416a6413f93ec2e9b8725a"
+    },
+    "plan_inspector": {
+      "bytes": 154352,
+      "path": "/tmp/statecentric-next-npu/.benchmarks/issue12-program-aware-cpp-build-r1/statecentric_qwen2_resident_plan_inspect",
+      "sha256": "83330617e86b2d199a8aab9538cdd59c2d611051febe6594f995a49ea5dd6aa2"
+    },
+    "preregistration": {
+      "bytes": 3576,
+      "path": "benchmarks/issue57_preemption_20260815_r2_preregistration.json",
+      "sha256": "942274ac791a371e9631cd8ed68dbca017887c90dd6140ff901177968686094d"
+    },
+    "pressure_probe": {
+      "bytes": 9587,
+      "path": "benchmarks/issue57_preemption_recompute_probe.py",
+      "sha256": "ebd9718a29617cfcf4bc8ea789384b3161453a075833d0c91a786808cd4930ec"
+    },
+    "prompt_manifest": {
+      "bytes": 35098,
+      "path": "results/qwen14b-native-exact-hot-v1-c01-o032-r01/prompt_manifest.json",
+      "sha256": "04d5b71feb8dd6bc5d1bc6b827d65b9970f787d7b25558905aca0ca5717bc1ed"
+    },
+    "rust_bundle_manifest": {
+      "bytes": 19483,
+      "path": ".benchmarks/issue57-preemption-rust-bundle-r1/manifest.json",
+      "sha256": "fa0cd489f3103230efaaf3b584aebb5f84f12904ac876133018cf81088e61032"
+    },
+    "verified_pack_digest_cache_source": {
+      "bytes": 36112,
+      "path": "benchmarks/issue95_bounded_apc_20260815_r3_pack_digest_cache.tsv",
+      "sha256": "3cfa499de77b60f739645074f4d6650cedfea80093416a6413f93ec2e9b8725a"
+    }
+  },
+  "schema_version": 1,
+  "treatment": {
+    "batch_boundary_only": true,
+    "candidate_enabled": true,
+    "cold_origin_only": true,
+    "control_enabled": false,
+    "max_per_request": 1
+  },
+  "version": "issue57-preemption-20260815-r2"
+}

@@ -1,0 +1,7 @@
+c7aec5e398d830b49ac2497e77c3fe8471e1dc3f7c32666bd9e7972d82521cfc  /tmp/statecentric-issue57/benchmarks/issue57_preemption_20260815_r2_identity.json
+942274ac791a371e9631cd8ed68dbca017887c90dd6140ff901177968686094d  /tmp/statecentric-issue57/benchmarks/issue57_preemption_20260815_r2_preregistration.json
+fa0cd489f3103230efaaf3b584aebb5f84f12904ac876133018cf81088e61032  /tmp/statecentric-issue57/.benchmarks/issue57-preemption-rust-bundle-r1/manifest.json
+04d5b71feb8dd6bc5d1bc6b827d65b9970f787d7b25558905aca0ca5717bc1ed  /tmp/statecentric-issue57/results/qwen14b-native-exact-hot-v1-c01-o032-r01/prompt_manifest.json
+bc3aeb6613f4d2cae6701637bc8e2ee65d48fd428c249d52fd411c190751f191  /tmp/statecentric-issue57/results/qwen14b-native-exact-hot-v1-oracle-o32.json
+09682f76a33b63dd5312aa7a0f7b43f9b2e1144cbd22c14ba952b9a9907e0815  /tmp/statecentric-issue57/.benchmarks/issue57-preemption-artifact-20260815-r2/execution_config.bin
+f82b25e00bd40891a870987087ca285dbc6a7d8c42d19d2790b6328b30cac38f  /tmp/statecentric-issue57/.benchmarks/issue57-preemption-artifact-20260815-r2/execution_artifact_identity.bin
