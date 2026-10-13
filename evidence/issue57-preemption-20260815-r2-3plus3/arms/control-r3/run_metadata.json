@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "evidence_label": "real-online",
+  "claim_status": "issue57-preemption-control-real-online-gate",
+  "timestamp_recorded": "2026-08-15T23:43:18+08:00",
+  "parent": {
+    "commit": "a02a6ccea3d22b73e8d732f45e4266983cd95ff8",
+    "branch": "codex/issue57-generation-safe-preemption",
+    "dirty": false
+  },
+  "lifecycle_provenance": {
+    "parent_start": {
+      "commit": "a02a6ccea3d22b73e8d732f45e4266983cd95ff8",
+      "tree": "31f55837c3218ecaece8905ba4f1749d5c5649d5",
+      "branch": "codex/issue57-generation-safe-preemption",
+      "dirty": false,
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "parent_end": {
+      "commit": "a02a6ccea3d22b73e8d732f45e4266983cd95ff8",
+      "tree": "31f55837c3218ecaece8905ba4f1749d5c5649d5",
+      "branch": "codex/issue57-generation-safe-preemption",
+      "dirty": false,
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "results_tree": {
+      "start_sha256": "",
+      "end_sha256": "",
+      "matched": true
+    },
+    "integrity": {
+      "launcher": {
+        "start_sha256": "2092cbefcf5b2d8915ae75b57753203682e7d0a5aa6284ee9964c3c780efc1bd",
+        "end_sha256": "2092cbefcf5b2d8915ae75b57753203682e7d0a5aa6284ee9964c3c780efc1bd",
+        "matched": true
+      },
+      "client": {
+        "start_sha256": "ebd9718a29617cfcf4bc8ea789384b3161453a075833d0c91a786808cd4930ec",
+        "end_sha256": "ebd9718a29617cfcf4bc8ea789384b3161453a075833d0c91a786808cd4930ec",
+        "matched": true
+      },
+      "auditor": null,
+      "end_matches_start": true
+    }
+  },
+  "submodules": {
+    "third_party/vllm-hust": {
+      "commit": "a02a6ccea3d22b73e8d732f45e4266983cd95ff8",
+      "branch": "codex/issue57-generation-safe-preemption",
+      "dirty": false,
+      "start": {
+        "commit": "a02a6ccea3d22b73e8d732f45e4266983cd95ff8",
+        "tree": "31f55837c3218ecaece8905ba4f1749d5c5649d5",
+        "branch": "codex/issue57-generation-safe-preemption",
+        "dirty": false,
+        "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "end": {
+        "commit": "a02a6ccea3d22b73e8d732f45e4266983cd95ff8",
+        "tree": "31f55837c3218ecaece8905ba4f1749d5c5649d5",
+        "branch": "codex/issue57-generation-safe-preemption",
+        "dirty": false,
+        "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "third_party/vllm-ascend-hust": {
+      "commit": "a02a6ccea3d22b73e8d732f45e4266983cd95ff8",
+      "branch": "codex/issue57-generation-safe-preemption",
+      "dirty": false,
+      "start": {
+        "commit": "a02a6ccea3d22b73e8d732f45e4266983cd95ff8",
+        "tree": "31f55837c3218ecaece8905ba4f1749d5c5649d5",
+        "branch": "codex/issue57-generation-safe-preemption",
+        "dirty": false,
+        "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "end": {
+        "commit": "a02a6ccea3d22b73e8d732f45e4266983cd95ff8",
+        "tree": "31f55837c3218ecaece8905ba4f1749d5c5649d5",
+        "branch": "codex/issue57-generation-safe-preemption",
+        "dirty": false,
+        "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  },
+  "hardware": {
+    "accelerator": "Ascend 910B2",
+    "physical_device": 3,
+    "visible_device": 0,
+    "device_count": 1
+  },
+  "model": {
+    "name": "Qwen2.5-14B-Instruct",
+    "revision": "qwen2.5-14b-bf16",
+    "dtype": "bfloat16",
+    "prompt_token_ids": null,
+    "prompt_tokens": 2177,
+    "prompt_sha256": null,
+    "prompt_token_ids_sha256": null
+  },
+  "runtime": {
+    "container": "statecentric-issue57-preemption-4075255",
+    "container_id": "05e47ef49de487ee24cf1bf955b9cf35ea9f7e28a5489d63ed4180562944e4aa",
+    "image": "quay.io/ascend/vllm-ascend:v0.23.0rc1-openeuler",
+    "container_hostname": "05e47ef49de4",
+    "container_image_id": "sha256:f4c89c293e076453e9eef9edb5fb9669740dccbd3c48619a9f976d775fc29b81",
+    "cann": "9.0.0",
+    "listen": "127.0.0.1:19704",
+    "scheduler_policy": "full_state_aware",
+    "max_batch_size": 1,
+    "append_prefill_max_batch_size": 1,
+    "max_batch_compute_tokens": 36864,
+    "max_batch_new_kv_bytes": 4294967296,
+    "queue_capacity": 4096,
+    "starvation_ms": 250,
+    "deadline_guard_ms": 25,
+    "prefill_cohort_target_size": 0,
+    "prefill_cohort_max_wait_ms": 10,
+    "workflow_prefill_cohort_size": 0,
+    "workflow_decode_group_size": 0,
+    "max_consecutive_prefill_batches": 2,
+    "max_prefill_rows": 36864,
+    "max_decode_batch": 4,
+    "state_capacity": 17,
+    "physical_cache_blocks": 320,
+    "client_concurrency": 4,
+    "shared_source_states": 0,
+    "shared_source_tokens": 0,
+    "max_private_cache_blocks_per_branch": 16,
+    "executor_plan_revision": 10,
+    "execution_config_schema_version": 4,
+    "decode_sync_policy": "batch_end",
+    "prefix_extension_mode": "paged_append_prefill",
+    "decode_mlp_policy": "fused_gate_up_aclnn_swiglu",
+    "online_decode_execution": "eager_aclnn",
+    "component_prefill_fused_gate_up": true,
+    "component_prefill_fused_swiglu": true,
+    "execution_config_sha256": "09682f76a33b63dd5312aa7a0f7b43f9b2e1144cbd22c14ba952b9a9907e0815",
+    "execution_artifact_identity_sha256": "f82b25e00bd40891a870987087ca285dbc6a7d8c42d19d2790b6328b30cac38f",
+    "batch_window_us": 25000,
+    "decode_quantum": 1,
+    "dynamic_batching": false,
+    "dual_microbatch": false,
+    "prefill_chunk_tokens": 0,
+    "prefill_chunk_inplace_continuation": false,
+    "prefill_chunk_contention_only": false,
+    "kv_bytes_per_token": 196608,
+    "workspace_bytes": 5905580032,
+    "capacity_timing_contract": "none",
+    "feedback_mode": "off",
+    "cache_capacity_stable_admission_stats": false,
+    "preemption_recompute": false,
+    "preemption_recompute_max_per_request": 1,
+    "protocol_decode_timing": false,
+    "protocol_async_transfer_lane": false,
+    "state_binding": {
+      "compiled_plan_digest": "53be77f5f77aa82437e048d1dfea46aae7a81e2bf9b68f19271bda21e9427c59",
+      "scheduler_plan_digest": "fc395287425a5e48779dbbc6c7ee7b7de7fc8f7274aff9ba5ad44da3ec143b0d",
+      "scheduler_plan_identity_domain": "statecentric-native-scheduler-plan-v18",
+      "scheduler_capacity_policy": "worker-reported-immediate-transactional-descriptor-and-block-budget-v2",
+      "scheduler_physical_admission_policy": "phase-specific-immediate-kv-blocks-v1",
+      "scheduler_workflow_cohort_policy": "persistent-decode-cohort-v2",
+      "workflow_prefill_cohort_size": 0,
+      "workflow_decode_group_size": 0,
+      "cache_capacity_stable_admission_stats": false,
+      "prefill_chunk_tokens": 0,
+      "prefill_chunk_inplace_continuation": false,
+      "prefill_chunk_contention_only": false,
+      "scheduler_telemetry_policy": "native-capacity-wave-timing-v5",
+      "state_publication_policy": "state-id-indexed-atomic-framed-binary-prepared-v2",
+      "scheduler_implementation_digest": "6e91ac6d76f4f279332086817e1ca9de0ce94709bfaf3b98bd96e08f0ab788b3",
+      "scheduler_runtime_dependencies_digest": "77f0485eb4bcf808f98e9eb47590464391e77e901c5c7ac19459c94b7545fb64",
+      "native_rust_bundle_identity": "2a0f19c0187a4eaecee8c92a2304e0d93f5f82eaab026a68d20e63f01a0c8f88",
+      "native_rust_bundle_profile": "release",
+      "native_rust_bundle_build_contract_sha256": "c00d84822275924e1b90f66f42b0de272678d9f197361c7f44aa4f28d7a000ca",
+      "native_cpp_producer_closure_identity": "ff0a0627bb183d6c2d7f11b9ec429e8f47d82ab3b7f348248fdef4628fb397ab",
+      "state_compatibility_digest": "c3923373768294789870e428ad52141a8985156c94fa584e01c2ab29c7d6277c",
+      "weights_digest": "4ca9cbc269c4605424d3170d614f43854388b19bee70ade62c28ce054ee9033a",
+      "rope_semantics_digest": "727d6bdcbb2a888af175107dec84f02bc794319c4b14e320e25a0f6ac490b0e2",
+      "state_schema_digest": "a130e3e491d2751adbabd3b3013f5b7963d5cc550089f4496807a40296e34d94",
+      "cache_layout_digest": "daed7e5148d17b21286f9273e094494c78e02f534f9bff590421f64a34f97ed1",
+      "resident_plan_record_sha256": "ab4a62b1b0927180f60814485740d632f12c28deb4df1d876da968f9c07e8c98"
+    },
+    "server_binary_sha256": "6e91ac6d76f4f279332086817e1ca9de0ce94709bfaf3b98bd96e08f0ab788b3",
+    "candidate_binary_sha256": "8a808d09e92d11692b246a7983f2e8e2b2c64696ed2f5d8c44fda5e25838fc3e",
+    "client_sha256": "ebd9718a29617cfcf4bc8ea789384b3161453a075833d0c91a786808cd4930ec",
+    "launcher_sha256": "2092cbefcf5b2d8915ae75b57753203682e7d0a5aa6284ee9964c3c780efc1bd",
+    "artifact_paths": {
+      "layers": "/model-assets/repo/.benchmarks/issue8-capacity17-20260812-r8/worker_layers",
+      "global_pack": "/model-assets/repo/.benchmarks/issue8-capacity17-20260812-r6/global_pack/global.weights.bin",
+      "execution_config": "/workspace/statecentric-ascend-engine/.benchmarks/issue57-preemption-artifact-20260815-r2/execution_config.bin",
+      "execution_artifact_identity": "/workspace/statecentric-ascend-engine/.benchmarks/issue57-preemption-artifact-20260815-r2/execution_artifact_identity.bin",
+      "native_rust_bundle": {
+        "path": "/tmp/statecentric-issue57/.benchmarks/issue57-preemption-rust-bundle-r1",
+        "manifest_sha256": "fa0cd489f3103230efaaf3b584aebb5f84f12904ac876133018cf81088e61032",
+        "identity_sha256": "2a0f19c0187a4eaecee8c92a2304e0d93f5f82eaab026a68d20e63f01a0c8f88",
+        "profile": "release",
+        "build_contract_sha256": "c00d84822275924e1b90f66f42b0de272678d9f197361c7f44aa4f28d7a000ca"
+      },
+      "native_cpp_producer_closure": {
+        "path": "/tmp/statecentric-issue57/.benchmarks/issue57-preemption-artifact-20260815-r2/native_cpp_producer_closure.json",
+        "record_sha256": "d298109ccea4ffdae6f5ea15aaf0de99f11ce63c5a744b8151f68a274ee5130e",
+        "identity_sha256": "ff0a0627bb183d6c2d7f11b9ec429e8f47d82ab3b7f348248fdef4628fb397ab"
+      },
+      "pto_gate_up_library": null,
+      "pto_swiglu_library": null,
+      "pto_gate_up_swiglu_library": null,
+      "pto_gate_up_swiglu_descriptor": null,
+      "operator_fixture": "/model-assets/repo/.benchmarks/issue8-capacity17-20260812-r8/operator_fixture",
+      "full_oracle": "/model-assets/repo/.benchmarks/issue8-capacity17-20260812-r8/full_oracle_4",
+      "decode_oracle": "/model-assets/repo/.benchmarks/issue8-capacity17-20260812-r8/decode_oracle"
+    },
+    "torch_execution": false,
+    "vllm_execution": false,
+    "graph_mode": false,
+    "custom_native_executor": true,
+    "conda_environment": null,
+    "worker_generation_oracle_sha256": "8ea7d5f88d57949b27b308eeeb3205890cfe7330e3ea1ac7c91a6d5dfa5b3a61"
+  },
+  "workload": {
+    "source": "repo-local native HTTP probe",
+    "probe_kind": "issue57-preemption",
+    "prompt_kind": null,
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "requests": null
+  },
+  "oracle": {
+    "manifest_sha256": "bc3aeb6613f4d2cae6701637bc8e2ee65d48fd428c249d52fd411c190751f191",
+    "kind": "single-prompt-generation-oracle"
+  },
+  "artifacts": {
+    "result_sha256": "9b11e27d30f03d7788325a6523c8356d0a831371a7e4f29c42d9c863fb341072",
+    "raw_requests_sha256": "97f466cf17d0e9f70faf5c25d61bc0b51932444b088c9ce43016f7296a9d610a",
+    "warmup_rows_sha256": null,
+    "batch_plans_sha256": null,
+    "prompt_manifest_sha256": "04d5b71feb8dd6bc5d1bc6b827d65b9970f787d7b25558905aca0ca5717bc1ed",
+    "prompt_family_sha256": null,
+    "oracle_family_sha256": null,
+    "health_sha256": "c9d701de506747f6cd47003b0604be19bb9bbd6e3f61a47317549b285f35427c",
+    "server_log_sha256": "2052450da71ec5d5edd6b37151f4208f6fbb28d9e55858e0b50d5c49d71e40d7",
+    "client_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "client_exit_code_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "launcher_exit_code_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "scoped_server_exit_status_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "native_server_ldd_sha256": "0876cfc29e6af9e82b00af278bafc6910e870d8efcebd9d88cd8cc30a10d0d9c",
+    "native_executor_ldd_sha256": "4f0b7eb2b922fc8bbe62e1ce8eb08f0e95551c9839bd897653317147fdc258a8",
+    "candidate_process_manifest_sha256": "b00c291a8f03c1332352f6f5c4a1877accdb9301c9b2c8db801296ff2cb3ef73",
+    "sanitized_environment_sha256": "228e72cda99b4c93f49ab96619f123ef13c30e9db5c10cafeccd22a3618122f4",
+    "runtime_dependencies_sha256": "0ebf3a6dc10d3a16760b1cfb94242af54c7b96a4f88167f19b88dcf9b3e16705",
+    "npu_before_sha256": "318252a3def56880138b711271fc22ce9d24342b6ec19c589e32dcee6a10d3da",
+    "npu_after_sha256": "d16211af263a7e2fb2bbb088736ea4382e0f3eb7320212477f84f5380ef0b93d",
+    "scoped_server_identity_sha256": "bff515c5cd9d581f2fa04407690a42ddc21d4367f031b1c06e288ab7c2b6ed90",
+    "scoped_port_before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "host_process_before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "container_process_before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scoped_port_after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "host_process_after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "container_process_after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "container_process_table_after_sha256": "a5320033553b4938c66509a23728601a4a14c3050c18566063f345a21a6d8a5e",
+    "parent_status_start_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "parent_status_end_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vllm_hust_status_start_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vllm_hust_status_end_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vllm_ascend_hust_status_start_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vllm_ascend_hust_status_end_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results_tree_start_sha256": "",
+    "results_tree_end_sha256": "",
+    "decode_timing_sha256": null
+  },
+  "command": "STATE_ENGINE_PROTOCOL_DECODE_TIMING=0 STATE_ENGINE_PHYSICAL_CACHE_BLOCKS=320 STATE_ENGINE_CLIENT_CONCURRENCY=4 STATE_ENGINE_SHARED_SOURCE_STATES=0 STATE_ENGINE_SHARED_SOURCE_TOKENS=0 STATE_ENGINE_MAX_PRIVATE_CACHE_BLOCKS_PER_BRANCH=16 STATE_ENGINE_CAPACITY_TIMING_CONTRACT=none STATE_ENGINE_MAX_BATCH_COMPUTE_TOKENS=36864 STATE_ENGINE_MAX_BATCH_NEW_KV_BYTES=4294967296 STATE_ENGINE_QUEUE_CAPACITY=4096 STATE_ENGINE_CACHE_CAPACITY_STABLE_ADMISSION_STATS=0 STATE_ENGINE_AUTOMATIC_PREFIX_CACHE=0 STATE_ENGINE_AUTOMATIC_PREFIX_CACHE_MAX_ENTRIES=4 STATE_ENGINE_PREEMPTION_RECOMPUTE=0 STATE_ENGINE_PREEMPTION_RECOMPUTE_MAX_PER_REQUEST=1 STATE_ENGINE_DYNAMIC_BATCHING=0 STATE_ENGINE_DUAL_MICROBATCH=0 STATE_ENGINE_PREFILL_CHUNK_TOKENS=0 STATE_ENGINE_PREFILL_CHUNK_INPLACE_CONTINUATION=0 STATE_ENGINE_PREFILL_CHUNK_CONTENTION_ONLY=0 STATE_ENGINE_STARVATION_MS=250 STATE_ENGINE_DEADLINE_GUARD_MS=25 STATE_ENGINE_DECODE_QUANTUM=1 STATE_ENGINE_PREFILL_COHORT_TARGET_SIZE=0 STATE_ENGINE_PREFILL_COHORT_MAX_WAIT_MS=10 STATE_ENGINE_WORKFLOW_PREFILL_COHORT_SIZE=0 STATE_ENGINE_WORKFLOW_DECODE_GROUP_SIZE=0 STATE_ENGINE_MAX_CONSECUTIVE_PREFILL_BATCHES=2 STATE_ENGINE_ISSUE57_ARM=control STATE_ENGINE_PREEMPTION_RECOMPUTE=0 STATE_ENGINE_PREEMPTION_RECOMPUTE_MAX_PER_REQUEST=1 STATE_ENGINE_EXACT_PROMPT_MANIFEST=/tmp/statecentric-issue57/results/qwen14b-native-exact-hot-v1-c01-o032-r01/prompt_manifest.json STATE_ENGINE_ISSUE57_ORACLE_RESULT=/tmp/statecentric-issue57/results/qwen14b-native-exact-hot-v1-oracle-o32.json STATE_ENGINE_NPU=3 STATE_ENGINE_MODEL_NAME=Qwen2.5-14B-Instruct STATE_ENGINE_MODEL_REVISION=qwen2.5-14b-bf16 STATE_ENGINE_MODEL_DTYPE=bfloat16 STATE_ENGINE_KV_BYTES_PER_TOKEN=196608 STATE_ENGINE_APPEND_PREFILL_MAX_BATCH_SIZE=1 STATE_ENGINE_NATIVE_LAYERS=/model-assets/repo/.benchmarks/issue8-capacity17-20260812-r8/worker_layers STATE_ENGINE_NATIVE_GLOBAL_PACK=/model-assets/repo/.benchmarks/issue8-capacity17-20260812-r6/global_pack/global.weights.bin STATE_ENGINE_EXECUTION_CONFIG=/workspace/statecentric-ascend-engine/.benchmarks/issue57-preemption-artifact-20260815-r2/execution_config.bin STATE_ENGINE_EXECUTION_ARTIFACT_IDENTITY=/workspace/statecentric-ascend-engine/.benchmarks/issue57-preemption-artifact-20260815-r2/execution_artifact_identity.bin STATE_ENGINE_OPERATOR_FIXTURE=/model-assets/repo/.benchmarks/issue8-capacity17-20260812-r8/operator_fixture STATE_ENGINE_FULL_ORACLE=/model-assets/repo/.benchmarks/issue8-capacity17-20260812-r8/full_oracle_4 STATE_ENGINE_DECODE_ORACLE=/model-assets/repo/.benchmarks/issue8-capacity17-20260812-r8/decode_oracle STATE_ENGINE_WORKSPACE_BYTES=5905580032 STATE_ENGINE_MAX_BATCH_SIZE=1 STATE_ENGINE_MAX_PREFILL_ROWS=36864 STATE_ENGINE_MAX_DECODE_BATCH=4 STATE_ENGINE_STATE_CAPACITY=17 STATE_ENGINE_WORKER_GENERATION_ORACLE=/model-assets/repo/results/20260717-qwen14b-generation-oracle-2-v1/oracle_manifest.json STATE_ENGINE_NATIVE_HTTP_PROBE_KIND=issue57-preemption STATE_ENGINE_BATCH_WINDOW_US=25000 STATE_ENGINE_NATIVE_HTTP_OUTPUT_ROOT=/tmp/statecentric-issue57/.benchmarks STATE_ENGINE_NATIVE_HTTP_OUTPUT=issue57-preemption-control-r3-4075255 scripts/run_native_http_npu_probe.sh",
+  "formal_use": "matched real-NPU generation-safe batch-boundary preemption and exact token-checkpoint recompute; no general workload or speedup claim"
+}

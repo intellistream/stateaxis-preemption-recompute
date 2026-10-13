@@ -1,0 +1,25 @@
+{
+  "binary_sha256": "6e91ac6d76f4f279332086817e1ca9de0ce94709bfaf3b98bd96e08f0ab788b3",
+  "dependencies": [
+    {
+      "content_sha256": "2f55019a2fcd682e34e40863d39531b606610dea4ec4e25fcd8855c7c39ea2e0",
+      "name": "ld-linux-aarch64.so.1"
+    },
+    {
+      "content_sha256": "b8b0c12b8010d68f657287963645038257832504d3567d95326b6f98846965df",
+      "name": "libc.so.6"
+    },
+    {
+      "content_sha256": "6ba2d7f4512e1e0635a51561a9587ca0bac140e8627a0fb916b4b2b5657b140d",
+      "name": "libgcc_s.so.1"
+    },
+    {
+      "content_sha256": "86bcb4b5addd2dcfc1df5b42c5ead486daa5fe82ac045c8f222dfec70e576c9d",
+      "name": "libm.so.6"
+    }
+  ],
+  "dependency_count": 4,
+  "format": "statecentric-elf-runtime-dependencies-v1",
+  "identity_sha256": "77f0485eb4bcf808f98e9eb47590464391e77e901c5c7ac19459c94b7545fb64",
+  "schema_version": 1
+}

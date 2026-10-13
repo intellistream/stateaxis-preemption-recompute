@@ -1,0 +1,11 @@
+{
+  "completed": true,
+  "exit_code": 0,
+  "foreign_resources_modified": false,
+  "format": "statecentric-issue57-preemption-status-v2",
+  "performance_claim": true,
+  "physical_npu": 3,
+  "repetitions_per_arm": 3,
+  "schema_version": 1,
+  "speedup_claim": false
+}

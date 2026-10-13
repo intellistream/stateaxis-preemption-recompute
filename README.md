@@ -22,6 +22,8 @@ per arm with exact tokens and lifecycle. Pressure-request TTFT improved, but the
 long request's sojourn regressed **113.375%**, violating the 5% no-harm guard.
 This is workload-scoped evidence, not a universal claim that recompute cannot
 help. It also does not qualify this revision for performance use.
+The complete formal 3+3 bundle is vendored under
+`evidence/issue57-preemption-20260815-r2-3plus3/`.
 
 Current ECPA evidence proves activation, identity binding, strict failure,
 effect counters, exact deterministic mock-worker output, and clean shutdown. It
